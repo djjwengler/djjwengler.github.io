@@ -41,5 +41,11 @@ footer a:visited {
   color: #88a2aa;
 }
 
+@media screen and (max-width: 550px) {
+  h1{
+    font-size: 3em;
+    margin-left: 0px;
 
+   }
+}
 
