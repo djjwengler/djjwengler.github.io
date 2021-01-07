@@ -43,7 +43,7 @@ footer a:visited {
 
 @media screen and (max-width: 550px) {
   h1{
-    font-size: 3em;
+    font-size: auto;
     margin-left: 0px;
 
    }
