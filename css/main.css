@@ -12,14 +12,15 @@ header, footer{
   border-radius: 10px;
 }
 header img{
-  max-width: 125px;
+  max-width: 175px;
   float: right;
-  margin-top: -125px;
+  margin-top: -115px;
   border-radius: 0 10px 0 0;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 h1{
  font-size: 3em;
+ margin-left: -100px;
 }
 main{
   padding: 20px; 
