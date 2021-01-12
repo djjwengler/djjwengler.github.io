@@ -1,0 +1,12 @@
+@media only screen and (min-width: 48.9em){
+  h1{
+    font-size: 4vw;
+  }
+  h2{
+    font-size: 2vw;
+  }
+  
+  main{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
