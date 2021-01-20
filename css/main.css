@@ -5,39 +5,37 @@ body {
   margin: auto;
   padding: 16px;
 }
-header, footer{
-  background-color: #3B4354;
+header,
+footer {
+  background-color: #3b4354;
   padding: 5px;
   text-align: center;
   font-family: "Kaushan Script", Garamond, serif;
-  color: #F7D3B5;
+  color: #f7d3b5;
   border-radius: 10px;
 }
-header img{
+header img {
   margin-right: 10px;
   margin-top: 10px;
 }
-h1{
- font-size: 10vw;
+h1 {
+  font-size: 10vw;
 }
-main{
-  padding: 20px; 
+main {
+  padding: 20px;
 }
-main a:link{
+main a:link {
   color: #404e4d;
 }
-main a:visited{
+main a:visited {
   color: #6b0504;
 }
-h2{
+h2 {
   font-size: 7vw;
 }
 footer a:link {
-  color: #F7D3B5;
+  color: #f7d3b5;
 }
 footer a:visited {
   color: #88a2aa;
 }
-
-
-

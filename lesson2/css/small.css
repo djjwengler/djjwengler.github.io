@@ -1,52 +1,53 @@
-
 body {
   font-family: "Oswald", sans-serif;
   margin: auto;
   padding: 16px;
 }
-h1{
+h1 {
   font-size: 7vw;
 }
-h2{
+h2 {
   font-size: 5vw;
 }
-h3{
+h3 {
   font-size: 20px;
 }
-h4, p{
+h4,
+p {
   font-size: 18px;
   margin-left: 5px;
 }
-h4{
+h4 {
   margin-top: -10px;
   margin-bottom: -10px;
 }
-header, footer{
+header,
+footer {
   background-color: #404e4d;
   padding: 5px;
   text-align: center;
   font-family: "Yellowtail", Garamond, serif;
-  color: #F4F6F6;
+  color: #f4f6f6;
 }
-main{
+main {
   margin: 10px;
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1em;
 }
-h3{
+h3 {
   background-color: #536564;
-  color: #F4F6F6;
+  color: #f4f6f6;
   padding: 5px;
   margin-top: 0px;
   border-radius: 6px 6px 0 0;
 }
-.design-princ{
+.design-princ {
   border: #536564 2px solid;
   border-radius: 10px;
-  background-color: #F4F6F6;
+  background-color: #f4f6f6;
 }
-.mobile-pic{
+.mobile-pic {
   width: 95%;
   display: block;
   margin-left: auto;
@@ -54,8 +55,8 @@ h3{
   border: #536564 2px solid;
 }
 footer a:link {
-  color:#F4F6F6;
+  color: #f4f6f6;
 }
 footer a:visited {
-  color: #F7D3B5;
+  color: #f7d3b5;
 }

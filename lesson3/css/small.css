@@ -1,0 +1,116 @@
+/*color palette: https://coolors.co/f5f5f5-7f675b-202030-d2f898-064789  */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Yusei+Magic&display=swap");
+
+body {
+  max-width: 850px;
+  margin: auto;
+}
+header,
+footer {
+  background-color: #064789;
+  padding: 10px;
+  color: #f5f5f5;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+nav,
+footer {
+  font-family: "Yusei Magic", Garamond, serif;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav a {
+  display: block;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  width: 100%;
+}
+main {
+  font-family: Lato, sans-serif;
+  padding: 20px;
+}
+.color-palette {
+  background-color: #f5f5f5;
+}
+.color-palette a {
+  color: #202030;
+}
+.color-palette a:visited {
+  color: #202030;
+}
+table {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #c2c2c2;
+}
+.colors td {
+  width: 20%;
+  height: 3em;
+}
+.primary {
+  background-color: #064789;
+}
+.secondary1 {
+  background-color: #7f675b;
+}
+.secondary2 {
+  background-color: #d2f898;
+}
+.accent1 {
+  background-color: #202030;
+}
+.accent2 {
+  background-color: #f5f5f5;
+}
+.typo {
+  width: 80%;
+  min-width: 350px;
+  margin: auto;
+  text-align: center;
+  color: #202030;
+}
+.typo td {
+  height: 3em;
+}
+.typo th {
+  background-color: #7f675b;
+  color: white;
+}
+.grey-back {
+  background-color: #f5f5f5;
+  color: #202030;
+}
+.blue-back {
+  background-color: #064789;
+  color: #f5f5f5;
+}
+.yusei {
+  font-family: "Yusei Magic", Garamond, serif;
+}
+.lato {
+  font-family: Lato, sans-serif;
+}
+nav a,
+footer a:visited {
+  color: #f5f5f5;
+}
+nav a:hover {
+  background-color: #d2f898;
+  color: #202030;
+}
