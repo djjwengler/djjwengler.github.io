@@ -2,4 +2,10 @@
   nav ul {
     flex-direction: row;
   }
+  .visible {
+    visibility: visible;
+  }
+  .typo {
+    margin-left: auto;
+  }
 }
