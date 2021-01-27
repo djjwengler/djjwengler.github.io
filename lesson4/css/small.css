@@ -9,7 +9,6 @@ footer {
 header {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  font-size: 3vw;
 }
 #logo {
   width: 80%;
@@ -20,6 +19,9 @@ header {
   margin-left: 5px;
   justify-self: start;
   text-align: left;
+}
+h1 {
+  font-size: 1rem;
 }
 .header-text h4 {
   margin-top: -10px;
@@ -110,13 +112,9 @@ footer a:link {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
 }
-
 #contact-id {
   grid-column: 1;
   grid-row: 1/2;
-}
-#footer-bar {
-  font-size: 1em;
 }
 #map {
   height: 100px;
