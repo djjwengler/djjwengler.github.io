@@ -1,0 +1,11 @@
+@media only screen and (min-width: 48.9em) {
+  body {
+    width: 900px;
+    margin: auto;
+  }
+  #footer-bar {
+    width: 106%;
+    margin-left: -30px;
+  }
+  }
+}
