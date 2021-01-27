@@ -73,7 +73,8 @@ nav ul li.current-page a {
 main {
   font-family: Lato, sans-serif;
 }
-section {
+section,
+article {
   width: 80%;
   margin: auto;
 }
@@ -104,15 +105,33 @@ footer {
 footer a:link {
   color: #f5f5f5;
 }
+#footer-head {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
 
+#contact-id {
+  grid-column: 1;
+  grid-row: 1/2;
+}
+#footer-bar {
+  font-size: 1em;
+}
 #map {
   height: 100px;
   background-color: #7f675b;
   text-align: center;
+  width: 100px;
+  grid-column: 1;
+  grid-row: 2/3;
 }
 #footer-bar {
   text-align: center;
   font-size: 3vw;
   margin-bottom: 0px;
   background-color: #064789;
+}
+.social {
+  display: none;
 }
