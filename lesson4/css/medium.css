@@ -7,33 +7,34 @@
   button {
     display: none;
   }
-}
-#logo {
-  width: 125px;
-}
-h1 {
-  font-size: 1.6rem;
-}
-h4 {
-  font-size: 1em;
-}
-#footer-head {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-gap: 100px;
-}
-#map {
-  grid-column: 1/2;
-  grid-row: 1;
-}
-#contact-id {
-  grid-column: 2/3;
-  grid-row: 1;
-}
-#footer-bar {
-  font-size: 0.8em;
-}
-.social {
-  display: inline;
+
+  #logo {
+    width: 125px;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 1em;
+  }
+  #footer-head {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 100px;
+  }
+  #map {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  #contact-id {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  #footer-bar {
+    font-size: 0.8em;
+  }
+  .social {
+    display: inline;
+  }
 }
