@@ -21,7 +21,7 @@ header {
   text-align: left;
 }
 h1 {
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 .header-text h4 {
   margin-top: -10px;
@@ -46,6 +46,7 @@ nav {
 }
 nav ul {
   list-style-type: none;
+  padding: 0px;
 }
 nav a,
 nav li {
@@ -56,7 +57,7 @@ nav li {
   text-decoration: none;
   font-size: 0.95rem;
   width: 100%;
-  margin-left: -20px;
+  margin-left: -10px;
 }
 nav a,
 footer a:visited {
@@ -111,22 +112,23 @@ footer a:link {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
+  justify-items: center;
 }
 #contact-id {
-  grid-column: 1;
-  grid-row: 1/2;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 #map {
   height: 100px;
   background-color: #7f675b;
   text-align: center;
-  width: 100px;
-  grid-column: 1;
-  grid-row: 2/3;
+  width: 100%;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
 #footer-bar {
   text-align: center;
-  font-size: 3vw;
+  font-size: 0.8em;
   margin-bottom: 0px;
   background-color: #064789;
 }
