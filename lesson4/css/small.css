@@ -23,7 +23,7 @@ header {
 h1 {
   font-size: 1.6rem;
 }
-.header-text h4 {
+.header-text p {
   margin-top: -10px;
   margin-left: 5px;
 }
@@ -85,7 +85,7 @@ article {
 article {
   width: 100%;
   height: 100px;
-  background-color: #7f675b;
+  border: solid #7f675b 5px;
 }
 
 .forecast ul {
