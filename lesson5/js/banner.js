@@ -1,6 +1,7 @@
 
-const todaysdate = new Date();
+const currentdate = new Date();
 
-if (todaysdate.getDay() == 2){
+if (currentdate.getDay() == 5){
   document.getElementById('banner').style.display = "block";
 }
+

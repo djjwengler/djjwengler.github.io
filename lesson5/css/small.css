@@ -81,6 +81,7 @@ nav ul.hide {
 }
 nav ul li.current-page a {
   text-decoration: underline;
+  font-weight: bold;
 }
 body {
   background-color: #f5f5f5;
