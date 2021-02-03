@@ -1,0 +1,169 @@
+/*color palette: https://coolors.co/f5f5f5-7f675b-202030-d2f898-064789  */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Yusei+Magic&display=swap");
+
+#banner {
+  text-align: center;
+  font-family: "Yusei Magic", Garamond, serif;
+  background-color: #7f675b;
+  padding: 10px;
+  color: #f5f5f5;
+  display: none;
+}
+header,
+footer {
+  background-color: #064789;
+  padding: 10px;
+  color: #f5f5f5;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+#logo {
+  width: 80%;
+  align-self: center;
+  justify-self: center;
+}
+.header-text {
+  margin-left: 5px;
+  justify-self: start;
+  text-align: left;
+}
+h1 {
+  font-size: 1.6rem;
+}
+.header-text p {
+  margin-top: -10px;
+  margin-left: 5px;
+}
+h1,
+h2,
+h3,
+nav,
+footer {
+  font-family: "Yusei Magic", Garamond, serif;
+}
+button {
+  font-size: 10vw;
+  background-color: #064789;
+  color: #f5f5f5;
+  border: none;
+}
+nav {
+  background-color: #064789;
+  margin-top: -15px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+}
+nav a,
+nav li {
+  display: block;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  width: 100%;
+  margin-left: -10px;
+}
+nav a,
+footer a:visited {
+  color: #f5f5f5;
+}
+nav a:hover {
+  background-color: #d2f898;
+  color: #202030;
+}
+nav ul.hide {
+  display: none;
+}
+nav ul li.current-page a {
+  text-decoration: underline;
+}
+body {
+  background-color: #f5f5f5;
+}
+main {
+  font-family: Lato, sans-serif;
+}
+.intro-image {
+  width: 100%;
+}
+section,
+article {
+  width: 90%;
+  margin: auto;
+}
+#intro-text {
+  width: auto;
+  padding: 5px 10px 5px 30px;
+  line-height: 0.5em;
+  background: radial-gradient(#f5f5f5, #d6d6d6);
+  margin-top: -5px;
+}
+.main {
+  border: solid #7f675b 5px;
+}
+.forecast h3 {
+  display: none;
+}
+.forecast ul {
+  background-color: #7f675b;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0px;
+}
+.forecast ul li {
+  margin: 10px;
+  margin-left: -20px;
+}
+article {
+  margin-bottom: 10px;
+}
+.article-image-md {
+  display: none;
+}
+.article-image {
+  width: 95%;
+  margin: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+footer {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+footer a:link {
+  color: #f5f5f5;
+}
+#footer-head {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+}
+#contact-id {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  justify-self: left;
+  margin-bottom: 0px;
+}
+#map {
+  background-color: #7f675b;
+  text-align: center;
+  width: 100%;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+#footer-bar {
+  text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 0px;
+  background-color: #064789;
+}
+.social {
+  display: none;
+}

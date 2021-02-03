@@ -17,6 +17,7 @@
   header p {
     font-size: 1em;
   }
+
   #footer-head {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

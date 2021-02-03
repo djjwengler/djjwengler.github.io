@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Preston Town Weather Etc page, where it's more than weather"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+    <title>Preston Weather Etc</title>
+  </head>
+  <body>
+    <p id="banner">
+      Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+      park pavilion.
+    </p>
+    <header>
+      <img
+        id="logo"
+        src="images/weather-etc-logo.png"
+        alt="Weather Etc. logo"
+      />
+      <section class="header-text">
+        <h1>Weather Etc</h1>
+        <p><em>It's more than weather!</em></p>
+      </section>
+      <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav>
+      <ul id="nav-hide" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li class="current-page"><a href="preston-5.html">Preston</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html">Fish Haven</a></li>
+        <li><a href="storm-center.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="intro">
+        <h2>Preston Idaho</h2>
+        <img
+          class="intro-image"
+          alt="cows and clouds"
+          src="images/c-z-shi-cows-unsplash.jpg"
+        />
+        <div id="intro-text">
+          <h3>Weather Summary</h3>
+          <p>Currently: Snow</p>
+          <p>Temperature: 45&deg; F</p>
+          <p>Humidity: 32%</p>
+          <p>Precipitation: 2 inches</p>
+          <p>Wind Speed: 25 mph</p>
+        </div>
+      </section>
+      <section class="main">
+        <div class="forecast">
+          <h3>Five Day Forecast</h3>
+          <ul>
+            <li>
+              <img
+                alt="forecast"
+                src="https://via.placeholder.com/50x50?text=Forecast"
+              />
+            </li>
+            <li>
+              <img
+                alt="forecast"
+                src="https://via.placeholder.com/50x50?text=Forecast"
+              />
+            </li>
+            <li>
+              <img
+                alt="forecast"
+                src="https://via.placeholder.com/50x50?text=Forecast"
+              />
+            </li>
+            <li>
+              <img
+                alt="forecast"
+                src="https://via.placeholder.com/50x50?text=Forecast"
+              />
+            </li>
+            <li>
+              <img
+                alt="forecast"
+                src="https://via.placeholder.com/50x50?text=Forecast"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="article">
+          <article>
+            <h3>Weather Article</h3>
+            <img
+              alt="article image"
+              src="images/jeffrey-f-lin-sledding-unsplash.jpg"
+              class="article-image-md"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+              libero ipsa saepe eum quas itaque quisquam unde odio earum quis,
+              molestias nulla fugiat iste illum reprehenderit illo ab in nihil.
+              Tempora sequi sit facilis ducimus corporis sunt eligendi assumenda
+              quae ab eos optio quibusdam distinctio, accusamus nesciunt
+              corrupti repellat dolor amet explicabo ea repudiandae quas aliquam
+              iste enim. Odit repudiandae nemo, aliquam aut fugit saepe nihil ab
+              perspiciatis. In fuga architecto tempore qui maxime eos
+              praesentium deserunt? Natus nesciunt inventore placeat
+              dignissimos, blanditiis repudiandae id ab ut, tempore eos
+              distinctio neque aut aperiam sapiente, quis facere perferendis
+              quos. Aliquid rerum ducimus accusantium repellat et consequuntur.
+              Quibusdam sint id ipsum in neque incidunt facilis voluptates
+              assumenda officia eveniet, porro qui quia at eligendi, pariatur
+              nisi officiis magnam omnis rem totam. Fuga, architecto commodi,
+              praesentium sed reiciendis perspiciatis cumque itaque delectus
+              dicta harum ducimus sunt beatae necessitatibus sint fugit,
+              voluptatum consequuntur.
+            </p>
+          </article>
+          <img
+            alt="article image"
+            src="images/jeffrey-f-lin-sledding-unsplash.jpg"
+            class="article-image"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="footer-head">
+        <div id="contact-id">
+          <h4>Contact Information:</h4>
+          <p>(email address)</p>
+          <p>(phone number)</p>
+          <span class="social"
+            ><img
+              class="social"
+              alt="social"
+              src="https://via.placeholder.com/25x25?text=SOCIAL"
+          /></span>
+          <span class="social"
+            ><img
+              class="social"
+              alt="social"
+              src="https://via.placeholder.com/25x25?text=SOCIAL"
+          /></span>
+          <span
+            ><img
+              class="social"
+              alt="social"
+              src="https://via.placeholder.com/25x25?text=SOCIAL"
+          /></span>
+        </div>
+        <img alt="Preston Idaho map" src="images/preston-map.png" id="map" />
+      </section>
+      <p id="footer-bar">Today's Date: <span id="currentdate"></span></p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/banner.js"></script>
+  </body>
+</html>
