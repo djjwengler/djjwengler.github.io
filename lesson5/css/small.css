@@ -9,6 +9,10 @@
   color: #f5f5f5;
   display: none;
 }
+body {
+  background-color: #ebebeb;
+  color: #181825;
+}
 header,
 footer {
   background-color: #064789;
@@ -57,35 +61,39 @@ nav ul {
   list-style-type: none;
   padding: 0px;
 }
-nav a,
-nav li {
+nav a {
   display: block;
   color: #f5f5f5;
-  text-align: center;
-  padding: 0.75rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   text-decoration: none;
   font-size: 0.95rem;
-  width: 100%;
-  margin-left: -10px;
 }
+nav li {
+  background-color: #064789;
+  text-align: center;
+  width: 100%;
+}
+
 nav a,
 footer a:visited {
   color: #f5f5f5;
 }
+
 nav a:hover {
-  background-color: #d2f898;
   color: #202030;
+  background-color: #d2f898;
+}
+
+nav ul li.current-page a {
+  text-decoration: underline;
+  background-color: #053d76;
+  color: #f5f5f5;
 }
 nav ul.hide {
   display: none;
 }
-nav ul li.current-page a {
-  text-decoration: underline;
-  font-weight: bold;
-}
-body {
-  background-color: #f5f5f5;
-}
+
 main {
   font-family: Lato, sans-serif;
 }
@@ -99,16 +107,89 @@ article {
 }
 #intro-text {
   width: auto;
-  padding: 5px 10px 5px 30px;
+  padding: 20px 10px 20px 10px;
   line-height: 0.5em;
   background: radial-gradient(#f5f5f5, #d6d6d6);
   margin-top: -5px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(6, auto);
+  grid-gap: 5px;
+
+  color: #181825;
 }
+
+#intro-text p,
+h3 {
+  margin-bottom: 0px;
+}
+#intro-text h3 {
+  margin-top: 5px;
+}
+
+#summary-head {
+  grid-row: 1/2;
+  grid-column: 1/3;
+  text-align: center;
+}
+#summary-now {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  text-align: right;
+}
+#summary-temp {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  text-align: right;
+}
+#summary-hum {
+  grid-row: 4/5;
+  grid-column: 1/2;
+  text-align: right;
+}
+#summary-prec {
+  grid-row: 5/6;
+  grid-column: 1/2;
+  text-align: right;
+}
+#summary-wind {
+  grid-row: 6/7;
+  grid-column: 1/2;
+  text-align: right;
+}
+
+#now {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+#temp {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+#hum {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+#prec {
+  grid-row: 5/6;
+  grid-column: 2/3;
+}
+#wind {
+  grid-row: 6/7;
+  grid-column: 2/3;
+}
+
 .main {
   border: solid #7f675b 5px;
 }
 .forecast h3 {
   display: none;
+}
+.forecast h5 {
+  text-align: center;
+  margin-bottom: 3px;
+  margin-top: 0px;
+  color: #f5f5f5;
 }
 .forecast ul {
   background-color: #7f675b;
@@ -120,6 +201,9 @@ article {
 .forecast ul li {
   margin: 10px;
   margin-left: -20px;
+}
+.weather-icon {
+  width: 40px;
 }
 article {
   margin-bottom: 10px;
@@ -167,4 +251,25 @@ footer a:link {
 }
 .social {
   display: none;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 16px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook,
+.fa-instagram {
+  background: #3b5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
 }

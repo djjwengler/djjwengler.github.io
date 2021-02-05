@@ -35,7 +35,11 @@
   }
   .forecast h3 {
     display: block;
-    padding-left: 45px;
+    padding-left: 0px;
+    margin-bottom: 10px;
+  }
+  .weather-icon {
+    width: 60px;
   }
   .article {
     border: solid #7f675b 5px;
@@ -47,8 +51,8 @@
     width: 50%;
     display: block;
     margin: 10px;
-    margin-top: -40px;
-    margin-right: -20px;
+    margin-top: -30px;
+    margin-right: -30px;
   }
   .article-image {
     display: none;
@@ -67,10 +71,9 @@
     grid-column: 2/3;
     grid-row: 1;
   }
-  #footer-bar {
-    font-size: 0.8em;
-  }
+
   .social {
     display: inline;
+    text-align: center;
   }
 }

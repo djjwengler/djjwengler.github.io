@@ -7,7 +7,10 @@
       name="description"
       content="Preston Town Weather Etc page, where it's more than weather"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -21,7 +24,7 @@
   <body>
     <p id="banner">
       Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
-      park pavilion.
+      park pavilion!
     </p>
     <header>
       <img
@@ -30,7 +33,7 @@
         alt="Weather Etc. logo"
       />
       <section class="header-text">
-        <h1>Weather Etc</h1>
+        <h1>WEATHER ETC</h1>
         <p><em>It's more than weather!</em></p>
       </section>
       <button onclick="toggleMenu()">&#9776;</button>
@@ -54,12 +57,17 @@
           src="images/c-z-shi-cows-unsplash.jpg"
         />
         <div id="intro-text">
-          <h3>Weather Summary</h3>
-          <p>Currently: Snow</p>
-          <p>Temperature: 45&deg; F</p>
-          <p>Humidity: 32%</p>
-          <p>Precipitation: 2 inches</p>
-          <p>Wind Speed: 25 mph</p>
+          <h3 id="summary-head">WEATHER SUMMARY</h3>
+          <p id="summary-now">Currently:</p>
+          <p id="now">Snow</p>
+          <p id="summary-temp">Temperature:</p>
+          <p id="temp">31&deg; F</p>
+          <p id="summary-hum">Humidity:</p>
+          <p id="hum">32%</p>
+          <p id="summary-prec">Precipitation:</p>
+          <p id="prec">2 in</p>
+          <p id="summary-wind">Wind Speed:</p>
+          <p id="wind">25 mph</p>
         </div>
       </section>
       <section class="main">
@@ -67,43 +75,62 @@
           <h3>Five Day Forecast</h3>
           <ul>
             <li>
+              <h5>MON</h5>
               <img
+                class="weather-icon"
                 alt="forecast"
-                src="https://via.placeholder.com/50x50?text=Forecast"
+                src="images/icons/day_sleet.png"
               />
+              <h5>35&deg; F</h5>
             </li>
             <li>
+              <h5>TUES</h5>
+
               <img
+                class="weather-icon"
                 alt="forecast"
-                src="https://via.placeholder.com/50x50?text=Forecast"
+                src="images/icons/day_snow.png"
               />
+              <h5>24&deg; F</h5>
             </li>
             <li>
+              <h5>WEDS</h5>
+
               <img
+                class="weather-icon"
                 alt="forecast"
-                src="https://via.placeholder.com/50x50?text=Forecast"
+                src="images/icons/cloudy.png"
               />
+              <h5>29&deg; F</h5>
             </li>
             <li>
+              <h5>THURS</h5>
+
               <img
+                class="weather-icon"
                 alt="forecast"
-                src="https://via.placeholder.com/50x50?text=Forecast"
+                src="images/icons/day_clear.png"
               />
+              <h5>33&deg; F</h5>
             </li>
             <li>
+              <h5>FRI</h5>
+
               <img
+                class="weather-icon"
                 alt="forecast"
-                src="https://via.placeholder.com/50x50?text=Forecast"
+                src="images/icons/snow.png"
               />
+              <h5>37&deg; F</h5>
             </li>
           </ul>
         </div>
         <div class="article">
           <article>
-            <h3>Weather Article</h3>
+            <h3>Perfect Sledding Conditions!</h3>
             <img
-              alt="article image"
-              src="images/jeffrey-f-lin-sledding-unsplash.jpg"
+              alt="kids sledding on a hill"
+              src="images/pexels-pixabay-kids_sledding.jpg"
               class="article-image-md"
             />
             <p>
@@ -128,8 +155,8 @@
             </p>
           </article>
           <img
-            alt="article image"
-            src="images/jeffrey-f-lin-sledding-unsplash.jpg"
+            alt="kids sledding on a hill"
+            src="images/pexels-pixabay-kids_sledding.jpg"
             class="article-image"
           />
         </div>
@@ -139,30 +166,43 @@
       <section id="footer-head">
         <div id="contact-id">
           <h4>Contact Information:</h4>
-          <p>(email address)</p>
-          <p>(phone number)</p>
-          <span class="social"
-            ><img
-              class="social"
-              alt="social"
-              src="https://via.placeholder.com/25x25?text=SOCIAL"
-          /></span>
-          <span class="social"
-            ><img
-              class="social"
-              alt="social"
-              src="https://via.placeholder.com/25x25?text=SOCIAL"
-          /></span>
-          <span
-            ><img
-              class="social"
-              alt="social"
-              src="https://via.placeholder.com/25x25?text=SOCIAL"
-          /></span>
+          <p>&#9993; weatheretc@email.com</p>
+          <p>&#9743; (333) 333-3333</p>
+          <div class="social">
+            <span
+              ><a
+                href="https://www.instagram.com"
+                class="fa fa-instagram"
+                target="_blank"
+              ></a
+            ></span>
+            <span
+              ><a
+                href="https://www.twitter.com"
+                class="fa fa-twitter"
+                target="_blank"
+              ></a
+            ></span>
+            <span>
+              <a
+                href="https://www.facebook.com"
+                class="fa fa-facebook"
+                target="_blank"
+              ></a
+            ></span>
+          </div>
         </div>
-        <img alt="Preston Idaho map" src="images/preston-map.png" id="map" />
+        <a
+          href="https://www.google.com/maps/place/Preston,+ID+83263/@42.0997416,-111.9153444,13z/data=!3m1!4b1!4m5!3m4!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f!8m2!3d42.0963133!4d-111.8766173"
+          target="_blank"
+          ><img alt="Preston Idaho map" src="images/preston-map.png" id="map"
+        /></a>
       </section>
-      <p id="footer-bar">Today's Date: <span id="currentdate"></span></p>
+      <p id="footer-bar">
+        &copy;
+        <span id="currentyear"></span> Weather Etc | Today's Date:
+        <span id="currentdate"></span>
+      </p>
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/toggle.js"></script>
