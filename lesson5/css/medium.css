@@ -61,11 +61,14 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: repeat(1, 1fr);
-    grid-gap: 100px;
+    grid-gap: 50px;
+    align-items: center;
   }
   #map {
     grid-column: 1/2;
     grid-row: 1;
+    align-self: center;
+    justify-self: center;
   }
   #contact-id {
     grid-column: 2/3;
