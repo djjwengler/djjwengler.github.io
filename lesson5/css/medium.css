@@ -76,10 +76,7 @@
     grid-column: 2/3;
     grid-row: 1;
   }
-  #contact-id p:nth-child(4),
-  #contact-id p:nth-child(5) {
-    text-align: left;
-  }
+
   .social {
     display: inline;
   }
