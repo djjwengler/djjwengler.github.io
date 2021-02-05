@@ -69,6 +69,8 @@
     grid-row: 1;
     align-self: center;
     justify-self: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   #contact-id {
     grid-column: 2/3;
