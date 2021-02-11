@@ -41,7 +41,7 @@
     <nav>
       <ul id="nav-hide" class="hide">
         <li><a href="index.html">Home</a></li>
-        <li class="current-page"><a href="preston-5.html">Preston</a></li>
+        <li class="current-page"><a href="preston-6.html">Preston</a></li>
         <li><a href="soda-springs.html">Soda Springs</a></li>
         <li><a href="fish-haven.html">Fish Haven</a></li>
         <li><a href="storm-center.html">Storm Center</a></li>
@@ -54,20 +54,26 @@
         <img
           class="intro-image"
           alt="cows and clouds"
-          src="images/c-z-shi-cows-unsplash.jpg"
+          src="images/wdd230_image_franklin_400.jpg"
+          sizes="(max-width: 650px) 400px, 900px"
+          srcset="
+            images/wdd230_image_franklin_400.jpg 400w,
+            images/wdd230_image_franklin_650.jpg 650w,
+            images/wdd230_image_franklin_900.jpg 900w
+          "
         />
         <div id="intro-text">
           <h3 id="summary-head">WEATHER SUMMARY</h3>
           <p id="summary-now">Currently:</p>
           <p id="now">Snow</p>
-          <p id="summary-temp">Temperature:</p>
-          <p id="temp">31&deg; F</p>
+          <p id="summary-temp">High:</p>
+          <p id="temp"><span id="tempnum">31</span>&deg; F</p>
           <p id="summary-hum">Humidity:</p>
           <p id="hum">32%</p>
-          <p id="summary-prec">Precipitation:</p>
-          <p id="prec">2 in</p>
+          <p id="summary-prec">Wind Chill:</p>
+          <p id="prec"><span id="chillnum"></span>&deg; F</p>
           <p id="summary-wind">Wind Speed:</p>
-          <p id="wind">25 mph</p>
+          <p id="wind"><span id="windnum">25</span> mph</p>
         </div>
       </section>
       <section class="main">
@@ -216,6 +222,7 @@
     <script src="js/currentdate.js"></script>
     <script src="js/toggle.js"></script>
     <script src="js/banner.js"></script>
+    <script src="js/windchill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
       WebFont.load({

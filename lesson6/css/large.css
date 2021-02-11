@@ -1,0 +1,11 @@
+@media only screen and (min-width: 900px) {
+  main,
+  footer {
+    width: 900px;
+    margin: auto;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-left: -10px;
+  }
+}

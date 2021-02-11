@@ -19,3 +19,4 @@ function correctMonth(m) {
 
 document.getElementById('currentdate').textContent = month + "/" + day + "/" + lastMod.getFullYear() + " " + hours + ":" + minutes + ":" + seconds;
 document.getElementById('currentyear').textContent = todaysdate.getFullYear();
+
