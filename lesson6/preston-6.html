@@ -12,10 +12,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
     <link href="css/small.css" rel="stylesheet" />
     <link href="css/medium.css" rel="stylesheet" />
     <link href="css/large.css" rel="stylesheet" />
@@ -51,22 +47,30 @@
     <main>
       <section class="intro">
         <h2>Preston Idaho</h2>
-        <img
-          class="intro-image"
-          alt="cows and clouds"
-          src="images/wdd230_image_franklin_400.jpg"
-          sizes="(max-width: 650px) 400px, 900px"
-          srcset="
-            images/wdd230_image_franklin_400.jpg 400w,
-            images/wdd230_image_franklin_650.jpg 650w,
-            images/wdd230_image_franklin_900.jpg 900w
-          "
-        />
+        <picture>
+          <source
+            media="(max-width: 400px)"
+            srcset="images/wdd230_image_franklin_400.jpg"
+          />
+          <source
+            media="(max-width: 650px)"
+            srcset="images/wdd230_image_franklin_650.jpg"
+          />
+          <source
+            media="(min-width: 651px)"
+            srcset="images/wdd230_image_franklin_900.jpg"
+          />
+          <img
+            class="intro-image"
+            src="images/wdd230_image_franklin_400.jpg"
+            alt="mountains and clouds"
+          />
+        </picture>
         <div id="intro-text">
           <h3 id="summary-head">WEATHER SUMMARY</h3>
           <p id="summary-now">Currently:</p>
           <p id="now">Snow</p>
-          <p id="summary-temp">High:</p>
+          <p id="summary-temp">Temperature:</p>
           <p id="temp"><span id="tempnum">31</span>&deg; F</p>
           <p id="summary-hum">Humidity:</p>
           <p id="hum">32%</p>
@@ -162,7 +166,7 @@
           </article>
           <img
             alt="kids sledding on a hill"
-            src="images/pexels-pixabay-kids_sledding.jpg"
+            src="images/pexels-pixabay-kids_sledding_sm.jpg"
             class="article-image"
           />
         </div>
@@ -173,10 +177,7 @@
         <div id="contact-id">
           <h3>WEATHER ETC</h3>
           <hr />
-          <p>
-            <i class="material-icons" style="font-size: 18px">place</i>77 Stormy
-            Blvd, Preston, ID
-          </p>
+          <p>77 Stormy Blvd, Preston, ID</p>
           <p>&#9993; weatheretc@email.com</p>
           <p>&#9743; (333) 333-3333</p>
           <div class="social">
