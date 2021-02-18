@@ -217,8 +217,37 @@ article {
   display: block;
   margin-bottom: 10px;
 }
+.gallery-header {
+  font-size: 2em;
+  text-align: center;
+}
 .gallery-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-gap: 25px;
+  justify-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.grid-image {
+  width: 275px;
+}
+figcaption {
+  text-align: center;
+  font-size: 0.7em;
+  margin-bottom: -30px;
+}
+figure img {
+  filter: blur(0.1em);
+  transition: filter 0.5s;
+  width: 275px;
+}
+.blur-remove {
+  filter: blur(0em);
+}
+
+.last-row-small {
+  margin-bottom: 70px;
 }
 footer {
   padding-left: 30px;

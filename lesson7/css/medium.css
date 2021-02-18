@@ -57,6 +57,9 @@
   .article-image {
     display: none;
   }
+  .last-row-medium {
+    margin-bottom: 70px;
+  }
   #footer-head {
     display: grid;
     grid-template-columns: auto auto;
