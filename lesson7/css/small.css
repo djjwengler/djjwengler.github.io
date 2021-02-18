@@ -238,15 +238,10 @@ figcaption {
   margin-bottom: -30px;
 }
 figure img {
-  filter: blur(0.1em);
-  transition: filter 0.5s;
   width: 275px;
 }
 figure:hover {
   box-shadow: 10px 20px 5px #7f675b;
-}
-.blur-remove {
-  filter: blur(0em);
 }
 
 .last-row-small {
