@@ -217,6 +217,9 @@ article {
   display: block;
   margin-bottom: 10px;
 }
+.gallery-grid {
+  display: grid;
+}
 footer {
   padding-left: 30px;
   padding-right: 30px;

@@ -1,13 +1,16 @@
-picture {
-  display: block;
+h1 {
+  text-align: center;
 }
 
 img {
+  display: block;
+  margin: auto;
   width: 300px;
   height: 400px;
-  filter: blur(0em);
-  transition: filter 0.3s;
+  filter: blur(0.3em);
+  transition: filter 1s;
+  padding: 15px;
 }
-img[data-src] {
+.blur-remove {
   filter: blur(0em);
 }
