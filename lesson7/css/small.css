@@ -242,6 +242,9 @@ figure img {
   transition: filter 0.5s;
   width: 275px;
 }
+figure:hover {
+  box-shadow: 10px 20px 5px #7f675b;
+}
 .blur-remove {
   filter: blur(0em);
 }

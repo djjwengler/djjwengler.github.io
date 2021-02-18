@@ -24,7 +24,7 @@
         alt="Weather Etc. logo"
       />
       <section class="header-text">
-        <h1>Weather Etc</h1>
+        <h1>WEATHER ETC</h1>
         <h4><em>It's more than weather!</em></h4>
       </section>
       <button onclick="toggleMenu()">&#9776;</button>
@@ -43,14 +43,65 @@
     </nav>
     <main><h2>Storm Center</h2></main>
     <footer>
-      <section id="contact-id"></section>
-      <p>Contact Information:</p>
-      <p>(email address)</p>
-      <p>(phone number)</p>
-      <p id="map">MAP</p>
-      <p id="footer-bar">Today's Date: <span id="currentdate"></span></p>
+      <section id="footer-head">
+        <div id="contact-id">
+          <h3>WEATHER ETC</h3>
+          <hr />
+          <p>77 Stormy Blvd, Preston, ID</p>
+          <p>&#9993; weatheretc@email.com</p>
+          <p>&#9743; (333) 333-3333</p>
+          <div class="social">
+            <span
+              ><a href="https://www.youtube.com" target="_blank"
+                ><img
+                  src="images/youtube.png"
+                  alt="youtube link"
+                  class="social-logo"
+                /> </a
+            ></span>
+            <span
+              ><a href="https://www.twitter.com" target="_blank"
+                ><img
+                  src="images/twitter.png"
+                  alt="twitter link"
+                  class="social-logo"
+                />
+              </a>
+            </span>
+            <span>
+              <a href="https://www.facebook.com" target="_blank"
+                ><img
+                  src="images/facebook.png"
+                  alt="facebook link"
+                  class="social-logo"
+                /> </a
+            ></span>
+          </div>
+        </div>
+        <a
+          href="https://www.google.com/maps/d/u/0/viewer?ie=UTF8&t=h&source=embed&oe=UTF8&msa=0&mid=1yvH-Ua6d-KLjHnkzQXESCbnUyow&ll=42.82789011908802%2C-112.29400650000002&z=8"
+          target="_blank"
+          ><img
+            alt="Southeastern Idaho map"
+            src="images/weather-map.jpg"
+            id="map"
+        /></a>
+      </section>
+      <p id="footer-bar">
+        &copy;
+        <span id="currentyear"></span> Weather Etc | Today's Date:
+        <span id="currentdate"></span>
+      </p>
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/toggle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Lato", "Yusei Magic"],
+        },
+      });
+    </script>
   </body>
 </html>

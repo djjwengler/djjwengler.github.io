@@ -8,8 +8,8 @@
     font-size: 2rem;
     margin-left: -10px;
   }
-  figure:hover {
-    box-shadow: 10px 20px 5px #7f675b;
+  figure {
+    box-shadow: 10px 10px 15px #7f675b;
   }
   .last-row-large {
     margin-bottom: 70px;
