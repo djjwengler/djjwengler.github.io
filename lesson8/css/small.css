@@ -342,6 +342,10 @@ form label.top input:required {
 form label.top input:required:valid {
   border-left: #d2f898 solid 6px;
 }
+.thanks-header {
+  text-align: center;
+  margin: 50px 0;
+}
 footer {
   padding-left: 30px;
   padding-right: 30px;
