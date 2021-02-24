@@ -25,7 +25,7 @@
       />
       <section class="header-text">
         <h1>WEATHER ETC</h1>
-        <h4><em>It's more than weather!</em></h4>
+        <p><em>It's more than weather!</em></p>
       </section>
       <button onclick="toggleMenu()">&#9776;</button>
     </header>
@@ -41,7 +41,104 @@
         <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
-    <main><h2>Storm Center</h2></main>
+    <main id="storm-main">
+      <h2 class="storm-header">Storm Center Report</h2>
+
+      <form action="thanks.html" method="get">
+        <fieldset>
+          <legend>Who is Reporting?</legend>
+          <label class="top"
+            >Full Name*
+            <input type="text" name="fname" required pattern="[A-Za-z\s]{5,}"
+          /></label>
+          <label class="top"
+            >Email
+            <input type="email" name="email" placeholder="user@gmail.com"
+          /></label>
+          <label class="top"
+            >Phone* <input type="tel" name="phone" required
+          /></label>
+
+          <label class="top"
+            >Zip Code* <input type="number" name="zip" required
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Tell Us About the Storm</legend>
+          <label class="top"
+            >Storm date <input type="date" name="date" />
+          </label>
+          <label class="top"
+            >Storm Type <input list="storm-types" name="type" /></label
+          ><datalist id="storm-types">
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+          </datalist>
+
+          <label class="top"
+            >Storm Severity: <span id="ratingvalue">5</span>
+            <input
+              id="storm-severity"
+              type="range"
+              name="severity"
+              min="1"
+              max="10"
+              value="5"
+              step="1"
+              list="tickmarks"
+              oninput="adjustRating(this.value)"
+              onchange="adjustRating(this.value)"
+            />
+          </label>
+          <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+          </datalist>
+          <label class="top"
+            >Storm Region
+            <select name="region">
+              <option value="" disabled selected>Select Region &#9662;</option>
+              <option value="fishhaven">Fish Haven</option>
+
+              <option value="preston">Preston</option>
+              <option value="sodaspring">Soda Springs</option>
+            </select>
+          </label>
+          <div>Are you in danger?</div>
+          <label class="sbs radio"
+            ><input type="radio" name="danger" value="yes" /> Yes</label
+          >
+          <label class="sbs radio"
+            ><input type="radio" name="danger" value="maybe" /> Maybe</label
+          >
+
+          <label class="sbs radio"
+            ><input type="radio" name="danger" value="no" /> No</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label class="top"
+            >Is there anything else we need to know?<textarea
+              name="extrainfo"
+            ></textarea>
+          </label>
+        </fieldset>
+        <input class="submitBtn" type="submit" value="Report the Storm" />
+      </form>
+    </main>
     <footer>
       <section id="footer-head">
         <div id="contact-id">
@@ -83,8 +180,9 @@
           target="_blank"
           ><img
             alt="Southeastern Idaho map"
-            src="images/weather-map.jpg"
+            src="images/weather-map-425.jpg"
             id="map"
+            loading="lazy"
         /></a>
       </section>
       <p id="footer-bar">
@@ -95,6 +193,7 @@
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/toggle.js"></script>
+    <script src="js/rating.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
       WebFont.load({

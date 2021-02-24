@@ -60,6 +60,12 @@
   .last-row-medium {
     margin-bottom: 70px;
   }
+  #storm-main h2 {
+    margin-left: 2%;
+  }
+  form label.radio {
+    padding: 0.15rem 0;
+  }
   #footer-head {
     display: grid;
     grid-template-columns: auto auto;
