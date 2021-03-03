@@ -383,6 +383,9 @@ form label.top input:required:valid {
   width: 80%;
   box-shadow: 0px 0px 10px 5px #7f675b;
 }
+.homepage-article {
+  padding: 20px;
+}
 footer {
   padding-left: 30px;
   padding-right: 30px;
