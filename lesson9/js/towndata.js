@@ -48,6 +48,6 @@ fetch(requestURL)
       act.appendChild(ul);
 
       document.querySelector('div.town-info').appendChild(town);
-      document.querySelector('section.town-activities').appendChild(act);
+      document.querySelector('div.town-activities').appendChild(act);
     }
   });
