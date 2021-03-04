@@ -64,7 +64,7 @@
           />
           <img
             class="intro-image"
-            data-src="images/donald-giannatti-mtnsunclouds-unsplash-900.jpg"
+            data-src="images/donald-giannatti-mtnsunclouds-unsplash-450.jpg"
             src="images/donald-giannatti-mtnsunclouds-unsplash-blur.jpg"
             alt="sun breaking through the clouds"
             loading="lazy"
@@ -119,13 +119,24 @@
         <a
           href="https://www.google.com/maps/d/u/0/viewer?ie=UTF8&t=h&source=embed&oe=UTF8&msa=0&mid=1yvH-Ua6d-KLjHnkzQXESCbnUyow&ll=42.82789011908802%2C-112.29400650000002&z=8"
           target="_blank"
-          ><img
-            alt="Southeastern Idaho map"
-            src="images/weather-map-blur.jpg"
-            data-src="images/weather-map-425.jpg"
-            id="map"
-            loading="lazy"
-        /></a>
+        >
+          <picture>
+            <source
+              media="(max-width: 450px)"
+              srcset="images/weather-map-213.jpg"
+            />
+            <source
+              media="(min-width: 451px)"
+              srcset="images/weather-map-425.jpg"
+            />
+            <img
+              alt="Southeastern Idaho map"
+              src="images/weather-map-blur.jpg"
+              data-src="images/weather-map-213.jpg"
+              id="map"
+              loading="lazy"
+            /> </picture
+        ></a>
       </section>
       <p id="footer-bar">
         &copy;
