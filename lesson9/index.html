@@ -18,11 +18,23 @@
   </head>
   <body>
     <header>
-      <img
-        id="logo"
-        src="images/weather-etc-logo.png"
-        alt="Weather Etc. logo"
-      />
+      <picture id="logo">
+        <source
+          media="(max-width: 450px)"
+          srcset="images/weather-etc-logo-sm.png"
+        />
+        <source
+          media="(min-width: 451px)"
+          srcset="images/weather-etc-logo.png"
+        />
+        <img
+          class="intro-image"
+          src="images/weather-etc-logo-sm.png"
+          alt="Weather Etc. logo"
+          loading="lazy"
+        />
+      </picture>
+
       <section class="header-text">
         <h1>WEATHER ETC</h1>
         <p><em>It's more than weather!</em></p>
