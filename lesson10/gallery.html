@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, intital-scale=1.0" />
+    <meta
+      name="description"
+      content="The gallery page for Weather Etc website where it's more than weather"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+    <title>Weather Etc Gallery</title>
+  </head>
+  <body>
+    <header>
+      <img
+        id="logo"
+        src="images/weather-etc-logo.png"
+        alt="Weather Etc. logo"
+      />
+      <section class="header-text">
+        <h1>WEATHER ETC</h1>
+        <p><em>It's more than weather!</em></p>
+      </section>
+      <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav>
+      <ul id="nav-hide" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston-10.html">Preston</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li class="current-page"><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2 class="gallery-header">Weather Gallery</h2>
+      <div class="gallery-grid">
+        <figure>
+          <img
+            class="grid-image"
+            src="images/jonathan-bowers-bqkdvj8a5ti-unsplash-300blur.jpg"
+            data-src="images/jonathan-bowers-bqkdvj8a5ti-unsplash-300.jpg"
+            alt="stormy path"
+          />
+          <figcaption><em>The path through the storm</em></figcaption>
+        </figure>
+        <figure>
+          <img
+            class="grid-image"
+            src="images/max-larochelle-uu-jw5sunyi-unsplash-300blur.jpg"
+            data-src="images/max-larochelle-uu-jw5sunyi-unsplash-300.jpg"
+            alt="sunset lightening"
+          />
+          <figcaption><em>Lightening at sunset</em></figcaption>
+        </figure>
+        <figure>
+          <img
+            class="grid-image"
+            src="images/noaa-0etszypjvdo-unsplash-300blur.jpg"
+            data-src="images/noaa-0etszypjvdo-unsplash-300.jpg"
+            alt="night storm"
+          />
+          <figcaption><em>Storms at night</em></figcaption>
+        </figure>
+        <figure>
+          <img
+            class="grid-image"
+            src="images/noaa-zvhm6rekex8-unsplash-300blur.jpg"
+            data-src="images/noaa-zvhm6rekex8-unsplash-300.jpg"
+            alt="sunset clouds"
+          />
+          <figcaption><em>Sunset on the clouds</em></figcaption>
+        </figure>
+        <figure>
+          <img
+            class="grid-image"
+            src="images/craig-whitehead-sujp8zpkubi-unsplash-300blur.jpg"
+            data-src="images/craig-whitehead-sujp8zpkubi-unsplash-300.jpg"
+            alt="snowy umbrella"
+          />
+          <figcaption><em>Walking in the snow</em></figcaption>
+        </figure>
+        <figure>
+          <img
+            class="grid-image"
+            src="images/frederic-perez-bly3k1gonwe-unsplash-300blur.jpg"
+            data-src="images/frederic-perez-bly3k1gonwe-unsplash-300.jpg"
+            alt="foggy trees"
+          />
+          <figcaption><em>Fog through the trees</em></figcaption>
+        </figure>
+        <figure class="last-row-large">
+          <img
+            class="grid-image"
+            src="images/todd-trapani-6vxqrxvfxji-unsplash-300blur.jpg"
+            data-src="images/todd-trapani-6vxqrxvfxji-unsplash-300.jpg"
+            alt="stormy field"
+          />
+          <figcaption><em>Grey storm</em></figcaption>
+        </figure>
+        <figure class="last-row-medium">
+          <img
+            class="grid-image"
+            src="images/wolfgang-hasselmann-br_-gllg7bs-unsplash-300blur.jpg"
+            data-src="images/wolfgang-hasselmann-br_-gllg7bs-unsplash-300.jpg"
+            alt="party cloudy"
+          />
+          <figcaption><em>The perfect day</em></figcaption>
+        </figure>
+        <figure class="last-row-small">
+          <img
+            class="grid-image"
+            src="images/yue-su--wx6s7utock-unsplash-300blur.jpg"
+            data-src="images/yue-su--wx6s7utock-unsplash-300.jpg"
+            alt="storm over town"
+          />
+          <figcaption><em>The birth of a storm</em></figcaption>
+        </figure>
+      </div>
+    </main>
+    <footer>
+      <p id="footer-bar">
+        &copy;
+        <span id="currentyear"></span> Weather Etc | Today's Date:
+        <span id="currentdate"></span>
+      </p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/lazyload.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Lato", "Yusei Magic"],
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+@media only screen and (min-width: 600px) {
+  nav ul.hide {
+    display: block;
+    display: flex;
+    flex-direction: row;
+  }
+  button {
+    display: none;
+  }
+
+  #logo {
+    width: 125px;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  header p {
+    font-size: 1em;
+  }
+  .intro {
+    position: relative;
+  }
+  #intro-text {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    padding: 0.75rem;
+    opacity: 0.8;
+  }
+  #intro-text {
+    position: absolute;
+  }
+  .main {
+    border: none;
+  }
+  .forecast h3 {
+    display: block;
+    padding-left: 0px;
+    margin-bottom: 10px;
+  }
+  .weather-icon {
+    width: 60px;
+  }
+  .article {
+    border: solid #7f675b 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .article-image-md {
+    float: right;
+    width: 50%;
+    display: block;
+    margin: 10px;
+    margin-top: -30px;
+    margin-right: -30px;
+  }
+  .article-image {
+    display: none;
+  }
+  .last-row-medium {
+    margin-bottom: 70px;
+  }
+  #storm-main h2 {
+    margin-left: 2%;
+  }
+  form label.radio {
+    padding: 0.15rem 0;
+  }
+
+  .town-info section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .town-info section h2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 1.5em;
+  }
+  .town-info section h3 {
+    font-size: 1.2em;
+    margin: 0px;
+    grid-column: 1/2;
+  }
+  /*
+  .town-info section h3:nth-of-type(1) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .town-info section h3:nth-of-type(2) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .town-info section h3:nth-of-type(3) {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .town-info section h3:nth-of-type(4) {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  */
+  .town-info section img {
+    grid-column: 2/3;
+    grid-row: 1/6;
+  }
+  .town-info section:nth-of-type(2) h2,
+  .town-info section:nth-of-type(2) h3 {
+    grid-column: 2/3;
+  }
+  .town-info section:nth-of-type(2) img {
+    grid-column: 1/2;
+  }
+  #footer-head {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 50px;
+    align-items: center;
+  }
+  #map {
+    grid-column: 1/2;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #contact-id {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+
+  .social {
+    display: inline;
+  }
+}

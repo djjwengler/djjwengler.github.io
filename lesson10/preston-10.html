@@ -37,7 +37,7 @@
     <nav>
       <ul id="nav-hide" class="hide">
         <li><a href="index.html">Home</a></li>
-        <li class="current-page"><a href="preston.html">Preston</a></li>
+        <li class="current-page"><a href="preston-10.html">Preston</a></li>
         <li><a href="soda-springs.html">Soda Springs</a></li>
         <li><a href="fish-haven.html">Fish Haven</a></li>
         <li><a href="stormcenter.html">Storm Center</a></li>
@@ -65,11 +65,13 @@
         <div id="intro-text">
           <h3 id="summary-head">WEATHER SUMMARY</h3>
           <p id="summary-now">Currently:</p>
-          <p id="now">Snow</p>
-          <p id="summary-temp">Temperature:</p>
-          <p id="temp"><span id="tempnum">31</span>&deg; F</p>
+          <p id="now"></p>
+          <p id="summary-temp">Current Temp:</p>
+          <p id="temp"><span id="tempnum"></span>&deg; F</p>
+          <p id="summary-high">High Temp:</p>
+          <p id="tempHigh"><span id="highnum"></span>&deg; F</p>
           <p id="summary-hum">Humidity:</p>
-          <p id="hum">32%</p>
+          <p id="hum"><span id="humnum"></span>%</p>
           <p id="summary-prec">Wind Chill:</p>
           <p id="prec"><span id="chillnum"></span>&deg; F</p>
           <p id="summary-wind">Wind Speed:</p>
@@ -79,65 +81,15 @@
       <section class="main">
         <div class="forecast">
           <h3>Five Day Forecast</h3>
-          <ul>
-            <li>
-              <h4>MON</h4>
-              <img
-                class="weather-icon"
-                alt="monday forecast"
-                src="images/icons/day_sleet.png"
-              />
-              <h4>35&deg; F</h4>
-            </li>
-            <li>
-              <h4>TUES</h4>
-
-              <img
-                class="weather-icon"
-                alt="tuesday forecast"
-                src="images/icons/day_snow.png"
-              />
-              <h4>24&deg; F</h4>
-            </li>
-            <li>
-              <h4>WEDS</h4>
-
-              <img
-                class="weather-icon"
-                alt="wednesday forecast"
-                src="images/icons/cloudy.png"
-              />
-              <h4>29&deg; F</h4>
-            </li>
-            <li>
-              <h4>THURS</h4>
-
-              <img
-                class="weather-icon"
-                alt="thursday forecast"
-                src="images/icons/day_clear.png"
-              />
-              <h4>33&deg; F</h4>
-            </li>
-            <li>
-              <h4>FRI</h4>
-
-              <img
-                class="weather-icon"
-                alt="friday forecast"
-                src="images/icons/snow.png"
-              />
-              <h4>37&deg; F</h4>
-            </li>
-          </ul>
+          <ul class="five-day"></ul>
         </div>
         <div class="article">
           <article>
-            <h3>Speed, icy conditions blamed for 17-vehicle Nevada pileup</h3>
+            <h3>Nevada Pile-up</h3>
             <img
               loading="lazy"
-              alt="kids sledding on a hill"
-              src="images/pexels-pixabay-kids_sledding.jpg"
+              alt="icy pile-up causes wreck"
+              src="images/pile-up-md.jpg"
               class="article-image-md"
             />
             <p>
@@ -161,12 +113,16 @@
               weather advisory is in effect until 7 p.m. Wednesday at Lake
               Tahoe, where up to 10 inches (25 cm) is possible in the upper
               elevations.
+              <a
+                href="https://apnews.com/article/nevada-reno-642acf6dd73750dddb19c7fbd6780af5"
+                >AP News</a
+              >
             </p>
           </article>
           <img
             loading="lazy"
-            alt="kids sledding on a hill"
-            src="images/pexels-pixabay-kids_sledding_md.jpg"
+            alt="car accident in Nevada"
+            src="images/pile-up-sm.jpg"
             class="article-image"
           />
         </div>
@@ -221,13 +177,14 @@
       <p id="footer-bar">
         &copy;
         <span id="currentyear"></span> Weather Etc | Today's Date:
-        <span id="currentdate"></span>
+        <span id="currentdate"></span> | Weather provided by
+        <a href="https://openweathermap.org/">OpenWeatherMap</a>
       </p>
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/toggle.js"></script>
     <script src="js/banner.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/townweather.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
       WebFont.load({

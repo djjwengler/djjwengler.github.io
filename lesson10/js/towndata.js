@@ -5,7 +5,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-     // temporary checking for valid response and data parsing
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
     const townData = jsonObject['towns'];
     for (let i = 0; i < townData.length; i++ ) {
       if (townData[i].name == "Preston" || townData[i].name == "Fish Haven" || townData[i].name == "Soda Springs"){
@@ -16,9 +16,6 @@ fetch(requestURL)
       let h3_3 = document.createElement('h3');
       let h3_4 = document.createElement('h3');
       let img = document.createElement('img');
-      let act = document.createElement('section');
-      let h4 = document.createElement('h4');
-      
       
       h2.textContent = townData[i].name;
       h3.textContent = townData[i].motto;
