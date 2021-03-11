@@ -6,11 +6,11 @@ fetch(apiURL)
     let temp = jsObject.main.temp;
     let wind = jsObject.wind.speed;
     const desc = jsObject.weather[0].description; 
-    document.getElementById('tempnum').textContent = temp;
+    document.getElementById('tempnum').textContent = temp.toFixed(1);
     document.getElementById('now').textContent = desc;
-    document.getElementById('highnum').textContent = jsObject.main.temp_max; 
+    document.getElementById('highnum').textContent = (jsObject.main.temp_max).toFixed(1); 
     document.getElementById('humnum').textContent = jsObject.main.humidity;
-    document.getElementById('windnum').textContent = wind;
+    document.getElementById('windnum').textContent = wind.toFixed(1);
     
     let windPow = Math.pow(wind, .16);
     let chill = 35.74 + (.6215 * temp) - (35.75 * windPow) + (.4275 * temp * windPow);
@@ -47,7 +47,7 @@ fetch(apiURL)
       img.setAttribute('src', 'images/icons/' + justList[i].weather[0].main + '.png');
       img.setAttribute('class', 'weather-icon');
       img.setAttribute('alt', dayArray[dayNum] + ' forecast')
-      h4_2.innerHTML = justList[i].main.temp + '&deg;';
+      h4_2.innerHTML = Math.round(justList[i].main.temp) + '&deg; F';
 
       li.appendChild(h4);
       li.appendChild(img);
