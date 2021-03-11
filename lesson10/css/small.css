@@ -165,12 +165,7 @@ h3 {
   font-size: 1.08em;
   text-align: center;
 }
-#temp {
-  grid-row: 2/3;
-  grid-column: 1/2;
-  text-align: right;
-  font-style: italic;
-}
+
 #tempHigh {
   grid-row: 4/5;
   grid-column: 2/3;
