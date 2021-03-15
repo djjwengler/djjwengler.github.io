@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Preston Town Weather Etc page, where it's more than weather"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+    <title>Preston Weather Etc</title>
+  </head>
+  <body>
+    <p id="banner">
+      Saturday = Preston Pancakes in the Park! 9:00 AM Saturday at the city park
+      pavilion!
+    </p>
+    <header>
+      <img
+        id="logo"
+        src="images/weather-etc-logo.png"
+        alt="Weather Etc. logo"
+      />
+      <section class="header-text">
+        <h1>WEATHER ETC</h1>
+        <p><em>It's more than weather!</em></p>
+      </section>
+      <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav>
+      <ul id="nav-hide" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li class="current-page"><a href="preston.html">Preston</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="intro">
+        <h2>Preston Idaho</h2>
+        <picture>
+          <source
+            media="(max-width: 450px)"
+            srcset="images/alec-baker-sunsetfields-unsplash-450.jpg"
+          />
+          <source
+            media="(min-width: 451px)"
+            srcset="images/alec-baker-sunsetfields-unsplash-900.jpg"
+          />
+          <img
+            class="intro-image"
+            src="images/alec-baker-sunsetfields-unsplash-450.jpg"
+            alt="farm at sunset"
+          />
+        </picture>
+        <div id="intro-text">
+          <h3 id="summary-head">WEATHER SUMMARY</h3>
+          <p id="nowdesc">
+            <span id="tempnum"></span>&deg; F <span id="now"></span>
+          </p>
+
+          <p id="summary-high">High:</p>
+          <p id="tempHigh"><span id="highnum"></span>&deg; F</p>
+          <p id="summary-hum">Humidity:</p>
+          <p id="hum"><span id="humnum"></span>%</p>
+          <p id="summary-prec">Wind Chill:</p>
+          <p id="prec"><span id="chillnum"></span>&deg; F</p>
+          <p id="summary-wind">Wind Speed:</p>
+          <p id="wind"><span id="windnum">25</span> mph</p>
+        </div>
+      </section>
+      <section class="main">
+        <div class="forecast">
+          <h3>Five Day Forecast</h3>
+          <ul class="five-day"></ul>
+        </div>
+        <div class="article">
+          <article>
+            <h3>Pancakes in the Park!</h3>
+            <img
+              loading="lazy"
+              alt="syrup dripping pancakes"
+              src="images/pancakes-md.jpg"
+              class="article-image-md"
+            />
+            <p>
+              Preston Pancakes in the park!! Come join the town every Saturday
+              morning at 9:00 in the city park pavilion, organized by the
+              Preston Parks and Rec Department. The town supplies all you need -
+              plate, fork, pancakes, sausages, and plenty of maple syrup! In the
+              past we've had as many as 236 town citizens join us for this
+              decades long tradition. Bring blankets or lawn chairs and
+              something to drink! Thermoses of hot chocolate or orange juice are
+              popular additions as well. The pancakes are provided at no cost -
+              to those who want to contribute, the Parks and Rec department
+              accepts donations to support this cherished town treasure.
+            </p>
+          </article>
+          <img
+            loading="lazy"
+            alt="syrup dripping pancakes"
+            src="images/pancakes-sm.jpg"
+            class="article-image"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="footer-head">
+        <div id="contact-id">
+          <h3>WEATHER ETC</h3>
+          <hr />
+          <p>77 Stormy Blvd, Preston, ID</p>
+          <p>&#9993; weatheretc@email.com</p>
+          <p>&#9743; (333) 333-3333</p>
+          <div class="social">
+            <span
+              ><a href="https://www.youtube.com" target="_blank"
+                ><img
+                  src="images/youtube.png"
+                  alt="youtube link"
+                  class="social-logo"
+                /> </a
+            ></span>
+            <span
+              ><a href="https://www.twitter.com" target="_blank"
+                ><img
+                  src="images/twitter.png"
+                  alt="twitter link"
+                  class="social-logo"
+                />
+              </a>
+            </span>
+            <span>
+              <a href="https://www.facebook.com" target="_blank"
+                ><img
+                  src="images/facebook.png"
+                  alt="facebook link"
+                  class="social-logo"
+                /> </a
+            ></span>
+          </div>
+        </div>
+        <a
+          href="https://www.google.com/maps/@42.0998531,-111.9501933,12z"
+          target="_blank"
+          ><img
+            loading="lazy"
+            alt="Preston Idaho map"
+            src="images/preston-map.png"
+            id="map"
+        /></a>
+      </section>
+      <p id="footer-bar">
+        &copy;
+        <span id="currentyear"></span> Weather Etc | Today's Date:
+        <span id="currentdate"></span> | Weather provided by
+        <a href="https://openweathermap.org/">OpenWeatherMap</a>
+      </p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/townweather.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Lato", "Yusei Magic"],
+        },
+      });
+    </script>
+  </body>
+</html>

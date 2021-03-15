@@ -1,0 +1,443 @@
+/*color palette: https://coolors.co/f5f5f5-7f675b-202030-d2f898-064789  */
+
+#banner {
+  text-align: center;
+  font-family: "Yusei Magic", Garamond, serif;
+  background-color: #7f675b;
+  padding: 10px;
+  color: #f5f5f5;
+  display: none;
+}
+body {
+  background-color: #ebebeb;
+  color: #181825;
+}
+header,
+footer {
+  background-color: #064789;
+  padding: 10px;
+  color: #f5f5f5;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+#logo {
+  width: 80%;
+  align-self: center;
+  justify-self: center;
+}
+.header-text {
+  margin-left: 5px;
+  justify-self: start;
+  text-align: left;
+}
+h1 {
+  font-size: 1.6rem;
+}
+.header-text p {
+  margin-top: -10px;
+  margin-left: 5px;
+}
+h1,
+h2,
+h3,
+nav,
+footer {
+  font-family: "Yusei Magic", Garamond, serif;
+}
+button {
+  font-size: 8vw;
+  background-color: #064789;
+  color: #f5f5f5;
+  border: none;
+}
+nav {
+  background-color: #064789;
+  margin-top: -15px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+}
+nav a {
+  display: block;
+  color: #f5f5f5;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+nav li {
+  background-color: #064789;
+  text-align: center;
+  width: 100%;
+}
+
+nav a,
+footer a:visited {
+  color: #f5f5f5;
+}
+
+nav a:hover {
+  color: #202030;
+  background-color: #d2f898;
+}
+
+nav ul li.current-page a {
+  text-decoration: underline;
+  background-color: #053d76;
+  color: #f5f5f5;
+}
+nav ul.hide {
+  display: none;
+}
+
+main {
+  font-family: Lato, sans-serif;
+}
+.intro-image {
+  width: 100%;
+}
+section,
+article,
+#storm-main {
+  width: 90%;
+  margin: auto;
+}
+#intro-text {
+  width: auto;
+  padding: 20px 10px 20px 10px;
+  line-height: 0.5em;
+  background: radial-gradient(#f5f5f5, #d6d6d6);
+  margin-top: -5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-gap: 5px;
+
+  color: #181825;
+}
+
+#intro-text p,
+h3 {
+  margin-bottom: 0px;
+}
+#intro-text h3 {
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#summary-head {
+  grid-row: 1/2;
+  grid-column: 1/3;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#summary-high {
+  grid-row: 4/5;
+  grid-column: 1/2;
+  text-align: right;
+}
+#summary-hum {
+  grid-row: 5/6;
+  grid-column: 1/2;
+  text-align: right;
+}
+#summary-prec {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  text-align: right;
+}
+#summary-wind {
+  grid-row: 6/7;
+  grid-column: 1/2;
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+#nowdesc {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  text-transform: capitalize;
+  font-size: 1.08em;
+  text-align: center;
+}
+
+#tempHigh {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+#hum {
+  grid-row: 5/6;
+  grid-column: 2/3;
+}
+#prec {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+#wind {
+  grid-row: 6/7;
+  grid-column: 2/3;
+}
+
+.main {
+  border: solid #7f675b 5px;
+}
+.forecast h3 {
+  display: none;
+}
+.forecast h4 {
+  text-align: center;
+  margin-bottom: 3px;
+  margin-top: 0px;
+  color: #f5f5f5;
+  font-size: 0.9rem;
+}
+.forecast ul {
+  background-color: #7f675b;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0px;
+}
+.forecast ul li {
+  margin: 10px;
+  margin-left: -20px;
+}
+.weather-icon {
+  width: 40px;
+}
+article {
+  margin-bottom: 10px;
+}
+.article-image-md {
+  display: none;
+}
+.article-image {
+  width: 95%;
+  margin: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.article-image-sm {
+  display: none;
+}
+.gallery-header {
+  font-size: 2em;
+  text-align: center;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-gap: 25px;
+  justify-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.7em;
+  margin-bottom: -30px;
+}
+figure img {
+  width: 275px;
+}
+figure:hover {
+  box-shadow: 10px 20px 5px #7f675b;
+}
+
+.last-row-small {
+  margin-bottom: 70px;
+}
+storm-header {
+  margin-left: 10em;
+}
+form fieldset {
+  margin: 2rem 10px;
+  border: 2px solid #064789;
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+
+form legend {
+  color: #064789;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  font-size: 1.1em;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: #6b564c;
+  font-size: 0.9rem;
+}
+input::placeholder {
+  color: #6b564c;
+}
+form label.top input,
+form label.top select,
+textarea {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #6b564c;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #6b564c;
+  width: 90%;
+  max-width: 20rem;
+  background-color: #f5f5f5;
+}
+form label.top select {
+  width: 100%;
+  max-width: 21.5rem;
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.85rem 0;
+  color: #6b564c;
+}
+form label.radio {
+  padding: 0.4rem 0;
+}
+
+form label.radio input:nth-child(2) {
+  margin: 100px;
+}
+form input.submitBtn {
+  border: none;
+  background-color: #064789;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+form input.submitBtn:hover {
+  background-color: #d2f898;
+  color: #202030;
+  border: solid 1px #064789;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #6b564c;
+  border-radius: 5px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  height: 23px;
+  width: 10px;
+  border-radius: 5px;
+  background: #6b564c;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px;
+}
+form label.top input:required {
+  border-left: #ff9505 solid 6px;
+}
+form label.top input:required:valid {
+  border-left: #d2f898 solid 6px;
+}
+.thanks-header {
+  text-align: center;
+  margin: 50px 0;
+}
+.town-info {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: solid #7f675b 1px;
+  box-shadow: 0px 0px 15px 5px #7f675b;
+  background-color: #7f675b;
+}
+.town-info section {
+  border: solid #7f675b 1px;
+  background-color: #f5f5f5;
+  color: #202030;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.town-info section h2 {
+  color: #064789;
+  font-size: 1.5em;
+}
+.town-info section h3:nth-of-type(1) {
+  font-family: "Yusei Magic", Garamond, serif;
+  color: #064789;
+  font-style: italic;
+  margin-top: -15px;
+}
+.town-info section h3 {
+  font-size: 0.8em;
+  font-family: Lato, sans-serif;
+}
+.town-info section img {
+  margin: 20px;
+  width: 80%;
+  box-shadow: 0px 0px 10px 5px #7f675b;
+}
+.homepage-article {
+  padding: 20px;
+}
+footer {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+footer a:link {
+  color: #f5f5f5;
+}
+#footer-head {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+}
+#contact-id {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-bottom: 0px;
+  text-align: center;
+}
+#contact-id p:nth-child(1) {
+  font-size: 1.2rem;
+}
+#contact-id p:nth-child(3) {
+  margin-left: -3.5px;
+}
+#map {
+  background-color: #7f675b;
+  text-align: center;
+  width: 100%;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+#footer-bar {
+  text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 0px;
+  background-color: #064789;
+}
+.social {
+  display: none;
+}
+.social-logo {
+  width: 50px;
+  margin: -2px;
+}
+.social-logo:hover {
+  opacity: 0.5;
+}
