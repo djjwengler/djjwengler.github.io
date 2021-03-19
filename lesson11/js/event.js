@@ -18,6 +18,6 @@ fetch(requestURL)
         events.appendChild(p);
       }
 
-      document.querySelector('section.events').appendChild(events);
+      document.querySelector('div.events').appendChild(events);
     
   });
