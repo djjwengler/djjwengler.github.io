@@ -66,7 +66,7 @@ nav a {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
 }
 nav li {
   background-color: #064789;
@@ -209,6 +209,31 @@ h3 {
 }
 .weather-icon {
   width: 40px;
+}
+
+#town-events {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  border: #064789 10px solid;
+  background-color: #7f675b;
+  color: white;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 15px 5px #7f675b;
+}
+#town-events hr {
+  width: 66%;
+  border: #d2f898 solid 1px;
+}
+#town-events h3 {
+  font-size: 1rem;
+}
+.homepage-article {
+  text-align: center;
+}
+.homepage-article p,
+.homepage-article h5 {
+  margin: 5px;
 }
 article {
   margin-bottom: 10px;

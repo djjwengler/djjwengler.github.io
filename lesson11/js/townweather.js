@@ -27,13 +27,11 @@ fetch(apiURL)
    
     let dayArray = ["SUN", "MON", "TUES", "WEDS", "THURS", "FRI", "SAT"];
     const justList = jsObject.list;
-    console.log(justList);
     function getHour(x){
       let dateVar = justList[x].dt_txt;
       let hour = new Date(dateVar).getHours();
       return hour;
     }
-    console.log(justList[2].main.temp);
     for (let i=0; i<justList.length; i++){
       if (getHour(i) == 18){
         let li = document.createElement('li');

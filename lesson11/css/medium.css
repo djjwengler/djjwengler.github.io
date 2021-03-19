@@ -17,6 +17,9 @@
   header p {
     font-size: 1em;
   }
+  nav a {
+    font-size: 0.95rem;
+  }
   .intro {
     position: relative;
   }
@@ -41,10 +44,16 @@
   .weather-icon {
     width: 60px;
   }
+  #town-events {
+    width: 50%;
+  }
   .article {
     border: solid #7f675b 5px;
     padding: 10px;
     margin-bottom: 10px;
+  }
+  .article p {
+    text-indent: 30px;
   }
   .article-image-md {
     float: right;

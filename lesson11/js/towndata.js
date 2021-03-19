@@ -5,7 +5,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+   // temporary checking for valid response and data parsing
     const townData = jsonObject['towns'];
     for (let i = 0; i < townData.length; i++ ) {
       if (townData[i].name == "Preston" || townData[i].name == "Fish Haven" || townData[i].name == "Soda Springs"){
