@@ -1,0 +1,11 @@
+@media only screen and (min-width: 850px) {
+  body {
+    background-image: url("../images/background-blur-1000.jpg");
+  }
+  main,
+  nav,
+  footer {
+    width: 850px;
+    margin: auto;
+  }
+}

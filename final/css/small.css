@@ -1,0 +1,297 @@
+:root {
+  /* change the values below to your colors from your palette */
+  --primary: #484d5b;
+  --secondary1: #2d3039;
+  --secondary2: #c0ccd4;
+  --accent1: #e6c229;
+  --accent2: #931f1d;
+
+  /* change the values below to your chosen font(s) */
+  --h-font: "Oswald", sans-serif;
+  --p-font: "Cardo", serif;
+}
+#weather-alert {
+  background-color: var(--secondary2);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-style: italic;
+}
+#alert {
+  font-size: 1.3em;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+body {
+  background-color: var(--secondary1);
+  font-family: var(--p-font);
+}
+h1 {
+  color: var(--accent1);
+  margin-top: -5px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--h-font);
+}
+header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  margin: auto;
+}
+.header-img {
+  grid-column: 1/6;
+  grid-row: 1/2;
+  z-index: -1;
+  justify-self: center;
+}
+.intro-image {
+  width: 100%;
+}
+#logo {
+  margin-left: 10px;
+}
+.header-text {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(1, 1fr);
+  font-size: 0.9em;
+  justify-self: center;
+  margin-top: 20px;
+}
+.header-text h1 {
+  text-shadow: 2px 2px 2px black;
+}
+.social-links {
+  grid-column: 5/6;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: end;
+  align-content: center;
+  justify-items: end;
+}
+.social-logo {
+  width: 30px;
+  margin-right: 5px;
+}
+.social-logo:hover {
+  opacity: 0.5;
+}
+#f-logo {
+  grid-row: 2/3;
+}
+#t-logo {
+  grid-row: 3/4;
+}
+button.nav-btn {
+  grid-row: 2/3;
+  grid-column: 1/6;
+  font-size: 8vw;
+  background-color: var(--secondary1);
+  color: white;
+  border: none;
+}
+nav {
+  background-color: var(--secondary1);
+  margin-top: -15px;
+  margin: auto;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+}
+nav a {
+  display: block;
+  color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-decoration: none;
+  font-size: 1.05rem;
+  align-items: center;
+}
+nav li {
+  background-color: var(--secondary1);
+  text-align: center;
+  width: 100%;
+}
+
+nav a,
+footer a:visited {
+  color: white;
+}
+
+nav a:hover {
+  color: var(--secondary1);
+  background-color: var(--accent1);
+}
+
+nav ul li.current-page a {
+  text-decoration: underline;
+  background-color: var(--primary);
+  color: white;
+}
+nav ul.hide {
+  display: none;
+}
+nav button {
+  margin: auto;
+}
+.join {
+  text-align: center;
+  color: white;
+  background-color: var(--primary);
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+}
+#join-btn {
+  color: white;
+  background-color: var(--accent2);
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+.weather-info {
+  text-align: center;
+  color: white;
+  background-color: var(--primary);
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+#summary-head {
+  font-size: 1.3em;
+}
+.weather-info p {
+  color: var(--accent1);
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+.forecast h3 {
+  display: none;
+}
+.forecast h4 {
+  text-align: center;
+  margin-bottom: 3px;
+  margin-top: 0px;
+  color: var(--secondary1);
+  font-size: 0.9rem;
+}
+.forecast ul {
+  background-color: var(--secondary2);
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0px;
+  border-radius: 10px;
+}
+.forecast ul li {
+  margin: 10px;
+  margin-left: -20px;
+}
+.weather-icon {
+  width: 40px;
+}
+img.town-image {
+  display: block;
+  width: 80%;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 30px;
+}
+.chamber-info {
+  text-align: center;
+  color: white;
+  background-color: var(--primary);
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 30px;
+  line-height: 1.4em;
+}
+.contact-info {
+  color: var(--accent1);
+}
+.contact-info p {
+  margin: 3px;
+}
+.town-events {
+  text-align: center;
+  color: white;
+  background-color: var(--primary);
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.town-events p:nth-child(2) {
+  margin-bottom: -13px;
+}
+.business-info {
+  text-align: center;
+  color: white;
+  background-color: var(--primary);
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.business-info a {
+  color: var(--accent1);
+}
+.business-info p {
+  margin-bottom: -5px;
+  line-height: 1.4em;
+}
+.business-info a:hover {
+  color: white;
+}
+.business-img {
+  width: 85%;
+}
+footer {
+  background-color: var(--secondary2);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 3 (repeat, auto);
+  text-align: center;
+}
+footer a:link {
+  color: white;
+}
+footer a:hover {
+  color: var(--secondary1);
+}
+.contact-info-foot p {
+  margin: 3px;
+}
+.social-links-foot a {
+  padding-top: 10px;
+}

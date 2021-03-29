@@ -1,0 +1,21 @@
+@media only screen and (min-width: 600px) {
+  body {
+    background-image: url("../images/background-blur-1000.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .header-text {
+    align-items: start;
+    font-size: 1.5em;
+  }
+
+  nav ul.hide {
+    display: block;
+    display: flex;
+    flex-direction: row;
+  }
+  button.nav-btn {
+    display: none;
+  }
+}
