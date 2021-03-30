@@ -80,10 +80,9 @@
       <div class="join">
         <button id="join-btn">JOIN US!</button>
         <p>Join Yardley Chamber of Commerce today!</p>
-        <p>Be a part of the business community of Yardley, Pennsylvania.</p>
       </div>
       <div class="weather-info">
-        <h3 id="summary-head">Current Weather in Yardley:</h3>
+        <h2 id="summary-head">Current Weather in Yardley:</h2>
         <p id="nowdesc">
           <span id="tempnum"></span>&deg;F <span id="now"></span>
         </p>
@@ -91,11 +90,15 @@
           <span id="humnum"></span>% <span id="summary-hum"> humidity</span>
         </p>
         <div class="forecast">
-          <h3>Three Day Forecast</h3>
           <ul class="three-day"></ul>
         </div>
       </div>
-      <picture class="town-img">
+      <div class="contact-info-side">
+        <p class="phone">333-777-3737</p>
+        <p class="address">33 Main St.</p>
+        <p class="address2">Yardley PA</p>
+      </div>
+      <picture class="town-img" id="image1">
         <source media="(max-width: 450px)" srcset="images/hero-425.jpg" />
         <source media="(min-width: 451px)" srcset="images/hero-425.jpg" />
         <img
@@ -112,13 +115,13 @@
           help coordinate advertising and promotional efforts. Join us in our
           goal of uniting the Yardley business community!
         </p>
-        <div class="contact-info">
+        <div class="contact-info-inner">
           <p class="phone">333-777-3737</p>
           <p class="address">33 Main St., Yardley PA</p>
           <p class="email">yardleychamber@yardleyborough.gov</p>
         </div>
       </div>
-      <picture>
+      <picture id="image2">
         <source media="(max-width: 450px)" srcset="images/hero-425.jpg" />
         <source media="(min-width: 451px)" srcset="images/hero-425.jpg" />
         <img
@@ -136,7 +139,7 @@
 
         <p>August 28: End of Summer Bash, Yardley Library</p>
       </div>
-      <picture>
+      <picture id="image3">
         <source media="(max-width: 450px)" srcset="images/hero-425.jpg" />
         <source media="(min-width: 451px)" srcset="images/hero-425.jpg" />
         <img
@@ -145,7 +148,16 @@
           alt="Yardley downtown"
         />
       </picture>
-      <div class="business-info">
+      <picture id="image4">
+        <source media="(max-width: 450px)" srcset="images/hero-425.jpg" />
+        <source media="(min-width: 451px)" srcset="images/hero-425.jpg" />
+        <img
+          class="town-image"
+          src="images/hero-425.jpg"
+          alt="Yardley downtown"
+        />
+      </picture>
+      <div class="business-info" id="business1">
         <img
           src="images/indian-450.jpg"
           alt="logo for Indian Garden"
@@ -164,7 +176,7 @@
           open for take out and delivery, their tikka masala is a must-try!
         </p>
       </div>
-      <div class="business-info">
+      <div class="business-info" id="business2">
         <img
           src="images/commonplace-450.jpg"
           alt="logo for Commonplace Reader"
@@ -183,7 +195,7 @@
           every style of reader. Porch-side Pickup available!
         </p>
       </div>
-      <div class="business-info">
+      <div class="business-info" id="business3">
         <img
           src="images/cramers-450.jpg"
           alt="logo for Cramer's Bakery"

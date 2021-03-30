@@ -1,11 +1,65 @@
 @media only screen and (min-width: 850px) {
   body {
     background-image: url("../images/background-blur-1000.jpg");
+    background-repeat: repeat-y;
   }
+  header,
   main,
   nav,
   footer {
     width: 850px;
     margin: auto;
+  }
+
+  #f-logo {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin: 3px;
+  }
+  #t-logo {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    margin: 3px;
+  }
+  nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  .join {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 65px;
+  }
+  #summary-head {
+    display: none;
+  }
+
+  .weather-info p {
+    font-size: 1em;
+  }
+  .contact-info-side {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 200px;
+  }
+  .chamber-info,
+  .town-events {
+    width: 90%;
+  }
+  .business-info {
+    width: 87%;
+  }
+  #business1 {
+    grid-column: 2/4;
+  }
+  #business2,
+  #business3 {
+    margin-top: 0px;
+    grid-column: 2/4;
+  }
+  footer {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 }

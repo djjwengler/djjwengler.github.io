@@ -12,7 +12,7 @@
 }
 #weather-alert {
   background-color: var(--secondary2);
-  color: white;
+  color: var(--secondary1);
   padding: 20px;
   text-align: center;
   font-style: italic;
@@ -22,7 +22,7 @@
 }
 .closebtn {
   margin-left: 15px;
-  color: white;
+  color: var(--secondary1);
   font-weight: bold;
   float: right;
   font-size: 22px;
@@ -190,9 +190,7 @@ nav button {
   font-size: 1.2em;
   text-transform: capitalize;
 }
-.forecast h3 {
-  display: none;
-}
+
 .forecast h4 {
   text-align: center;
   margin-bottom: 3px;
@@ -222,6 +220,9 @@ img.town-image {
   margin: auto;
   margin-top: 30px;
 }
+#image4 {
+  display: none;
+}
 .chamber-info {
   text-align: center;
   color: white;
@@ -233,10 +234,13 @@ img.town-image {
   margin-top: 30px;
   line-height: 1.4em;
 }
-.contact-info {
+.contact-info-side {
+  display: none;
+}
+.contact-info-inner {
   color: var(--accent1);
 }
-.contact-info p {
+.contact-info-inner p {
   margin: 3px;
 }
 .town-events {
@@ -284,9 +288,12 @@ footer {
   text-align: center;
 }
 footer a:link {
-  color: white;
+  color: var(--secondary1);
 }
 footer a:hover {
+  color: white;
+}
+footer a:visited {
   color: var(--secondary1);
 }
 .contact-info-foot p {
