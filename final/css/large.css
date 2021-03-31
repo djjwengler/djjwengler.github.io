@@ -1,7 +1,4 @@
 @media only screen and (min-width: 850px) {
-  body {
-    background-image: url("../images/background3-1000blur.jpg");
-  }
   header,
   main,
   nav,
@@ -20,12 +17,15 @@
     grid-column: 3/4;
     margin: 3px;
   }
+  .header-text {
+    font-size: 1.4em;
+  }
   nav {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
   }
-  .join {
+  main#index-main .join {
     position: -webkit-sticky;
     position: sticky;
     top: 65px;
@@ -33,7 +33,6 @@
   #summary-head {
     font-size: 1.2em;
   }
-
   .weather-info p {
     font-size: 1em;
   }
@@ -110,6 +109,36 @@
     padding: 20px;
     max-width: 25rem;
     margin-left: 50px;
+  }
+  button.dir-btn {
+    margin: 10px;
+    font-size: 3vw;
+    background-color: var(--accent1);
+    color: var(--secondary1);
+    border: none;
+  }
+  button.dir-btn:hover {
+    opacity: 0.5;
+  }
+  #dir-hide {
+    display: block;
+    margin-left: 37%;
+    margin-top: -30px;
+  }
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+  }
+  div.one-col {
+    grid-template-columns: repeat(1, 1fr);
+    width: 450px;
+    margin: auto;
+  }
+  div.one-col section {
+    height: 260px;
+  }
+  div.one-col section img {
+    height: 45%;
   }
   footer {
     border-top-left-radius: 10px;

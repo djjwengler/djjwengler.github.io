@@ -1,13 +1,18 @@
 @media only screen and (min-width: 600px) {
   body {
-    background-image: url("../images/background-blur-1000.jpg");
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1)
+      ),
+      url("../images/background4-1000blur.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
   }
+
   .header-text {
     align-items: start;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   #f-logo {
     grid-row: 1/2;
@@ -27,7 +32,7 @@
   button.nav-btn {
     display: none;
   }
-  main #index-main {
+  main#index-main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(13, auto);
@@ -169,14 +174,14 @@
     align-items: center;
   }
   .join-header {
-    color: var(--secondary2);
-    display: block;
     font-size: 1.7em;
-    background-color: var(--secondary1);
+    text-shadow: -1px 1px 3px var(--secondary1), 1px 1px 3px var(--secondary1),
+      1px -1px 0 var(--secondary1), -1px -1px 0 var(--secondary1);
     padding: 20px;
     border-radius: 20px;
     margin: 20px auto;
   }
+
   form {
     display: block;
     margin: auto;
@@ -186,5 +191,16 @@
   form input.submitBtn {
     padding: 1rem 1.5rem;
     margin: 20px 100px;
+  }
+  .dir-header {
+    font-size: 1.7em;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px auto;
+    text-shadow: -1px 1px 3px var(--secondary1), 1px 1px 3px var(--secondary1),
+      1px -1px 0 var(--secondary1), -1px -1px 0 var(--secondary1);
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

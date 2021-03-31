@@ -19,11 +19,11 @@
   <body>
     <header>
       <picture class="header-img">
-        <source media="(max-width: 450px)" srcset="images/hero-425.jpg" />
-        <source media="(min-width: 451px)" srcset="images/hero-850.jpg" />
+        <source media="(max-width: 450px)" srcset="images/heroflip-425.jpg" />
+        <source media="(min-width: 451px)" srcset="images/heroflip-850.jpg" />
         <img
           class="intro-image"
-          src="images/hero-425.jpg"
+          src="images/heroflip-425.jpg"
           alt="Yardley downtown"
         />
       </picture>
@@ -71,7 +71,16 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <main></main>
+    <main>
+      <div class="dir-header-btn">
+        <h2 class="dir-header">Directory of Members</h2>
+        <dir id="dir-hide">
+          <button class="dir-btn" onclick="toggleOne()">&#9776;</button>
+          <button class="dir-btn" onclick="toggleTwo()">&#9783;</button>
+        </dir>
+      </div>
+      <div id="bcards" class="cards"></div>
+    </main>
     <footer>
       <div class="contact-info-foot">
         <p class="phone">333-777-3737</p>
@@ -109,7 +118,8 @@
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/toggle.js"></script>
-    <script src="js/townweather.js"></script>
+    <script src="js/cards.js"></script>
+    <script src="js/directorybtns.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
