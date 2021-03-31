@@ -98,10 +98,11 @@ header {
   opacity: 0.5;
 }
 #f-logo {
-  grid-row: 2/3;
+  grid-row: 1/2;
+  margin-top: 5px;
 }
 #t-logo {
-  grid-row: 3/4;
+  grid-row: 2/3;
 }
 button.nav-btn {
   grid-row: 2/3;
@@ -156,7 +157,15 @@ nav ul.hide {
 nav button {
   margin: auto;
 }
-.join {
+
+.join,
+.weather-info,
+.chamber-info,
+.town-events,
+.business-info,
+.city-history,
+.city-stats,
+.city-events {
   text-align: center;
   color: white;
   background-color: var(--primary);
@@ -172,14 +181,13 @@ nav button {
   padding: 20px;
   font-size: 1.2rem;
 }
-.weather-info {
-  text-align: center;
-  color: white;
-  background-color: var(--primary);
-  padding: 20px;
-  width: 80%;
-  margin: auto;
-  border-radius: 10px;
+.weather-info,
+.town-events,
+.business-info,
+.chamber-info,
+.city-history,
+.city-stats,
+.city-events {
   margin-top: 30px;
 }
 #summary-head {
@@ -213,7 +221,8 @@ nav button {
 .weather-icon {
   width: 40px;
 }
-img.town-image {
+img.town-image,
+img.yardley-image {
   display: block;
   width: 80%;
   border-radius: 10px;
@@ -224,14 +233,6 @@ img.town-image {
   display: none;
 }
 .chamber-info {
-  text-align: center;
-  color: white;
-  background-color: var(--primary);
-  padding: 20px;
-  width: 80%;
-  margin: auto;
-  border-radius: 10px;
-  margin-top: 30px;
   line-height: 1.4em;
 }
 .contact-info-side {
@@ -243,28 +244,12 @@ img.town-image {
 .contact-info-inner p {
   margin: 3px;
 }
-.town-events {
-  text-align: center;
-  color: white;
-  background-color: var(--primary);
-  padding: 20px;
-  width: 80%;
-  margin: auto;
-  border-radius: 10px;
-  margin-top: 30px;
-}
+
 .town-events p:nth-child(2) {
   margin-bottom: -13px;
 }
-.business-info {
-  text-align: center;
-  color: white;
-  background-color: var(--primary);
-  padding: 20px;
-  width: 80%;
-  margin: auto;
-  border-radius: 10px;
-  margin-top: 30px;
+.business-info,
+.city-events {
   margin-bottom: 30px;
 }
 .business-info a {
@@ -280,11 +265,43 @@ img.town-image {
 .business-img {
   width: 85%;
 }
+#city-main {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+}
+.city-stats ul {
+  list-style-type: none;
+  margin-left: -30px;
+}
+
+.city-history ul,
+.city-events ul {
+  text-align: left;
+}
+.city-events h3 {
+  font-size: 1.2em;
+  color: var(--accent1);
+}
+.city-events a {
+  text-decoration: none;
+}
+#unique {
+  color: var(--accent1);
+}
+.city-events a {
+  color: white;
+}
+.city-events ul li a:hover {
+  color: var(--accent1);
+}
+.city-events a:visited {
+  color: white;
+}
 footer {
   background-color: var(--secondary2);
   padding: 20px;
   display: grid;
-  grid-template-columns: 3 (repeat, auto);
+  grid-template-rows: repeat(3, auto);
   text-align: center;
 }
 footer a:link {

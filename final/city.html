@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Yardley Pennsylvania Chamber of Commerce city page"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+    <title>Yardley Chamber of Commerce</title>
+  </head>
+  <body>
+    <header>
+      <picture class="header-img">
+        <source media="(max-width: 450px)" srcset="images/hero-425.jpg" />
+        <source media="(min-width: 451px)" srcset="images/hero-850.jpg" />
+        <img
+          class="intro-image"
+          src="images/hero-425.jpg"
+          alt="Yardley downtown"
+        />
+      </picture>
+
+      <section class="header-text">
+        <picture>
+          <source media="(max-width: 450px)" srcset="images/logo-100.png" />
+          <source media="(min-width: 451px)" srcset="images/logo-100.png" />
+          <img
+            id="logo"
+            src="images/logo-100.png"
+            alt="Yardley Chamber logo"
+            loading="lazy"
+          />
+        </picture>
+        <h1>YARDLEY CHAMBER OF COMMERCE</h1>
+      </section>
+      <div class="social-links">
+        <span id="t-logo"
+          ><a href="https://www.twitter.com" target="_blank"
+            ><img
+              src="images/twitter1.png"
+              alt="twitter link"
+              class="social-logo"
+            />
+          </a>
+        </span>
+        <span id="f-logo">
+          <a href="https://www.facebook.com" target="_blank"
+            ><img
+              src="images/facebook1.png"
+              alt="facebook link"
+              class="social-logo"
+            /> </a
+        ></span>
+      </div>
+      <button class="nav-btn" onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav>
+      <ul id="nav-hide" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li class="current-page"><a href="city.html">Yardley</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main id="city-main">
+      <picture class="city-img" id="yardley-mural">
+        <source media="(max-width: 450px)" srcset="images/mural-450.jpg" />
+        <source media="(min-width: 451px)" srcset="images/mural-900.jpg" />
+        <img
+          class="yardley-image"
+          src="images/mural-450.jpg"
+          alt="Yardley downtown"
+          loading="lazy"
+        />
+      </picture>
+      <div class="city-stats">
+        <ul>
+          <li>Population: 2.53k</li>
+          <li>Median age: 48.3</li>
+          <li>Median Individual Income: $56k</li>
+          <li>College Degree: 66.4%</li>
+          <li>Population 1880: 820</li>
+          <li>Founded: 1682</li>
+          <li>Encorporated: 1895</li>
+        </ul>
+      </div>
+      <picture class="city-img" id="city-image2">
+        <source media="(max-width: 450px)" srcset="images/canal-425.jpg" />
+        <source media="(min-width: 451px)" srcset="images/canal-425.jpg" />
+        <img
+          class="yardley-image"
+          src="images/canal-425.jpg"
+          alt="Delware canal path"
+          loading="lazy"
+        />
+      </picture>
+      <div class="city-history">
+        <p>
+          Yardley, Pennsylvania was founded in 1682 by William Yardley. First
+          named "Prospect Farm" by the Yardleys, it was christened
+          "Yardleyville" in 1828. By the time the Reading Railroad came through
+          the town in 1876 it was officially Yardley.
+        </p>
+
+        <ul id="unique">
+          <li>Yardley was a station for the Underground Railroad</li>
+          <li>
+            The Bridge in Yardley Borough is listed on the National Register of
+            Historic Places
+          </li>
+          <li>
+            One of the oldest Quaker burial grounds in the state is located in
+            Yardley
+          </li>
+        </ul>
+        <p>
+          Yardley sits on the Delaware river, only a few miles south of
+          Washington's famous Christmas 1776 crossing. The Delaware canal, a
+          60-mile long canal running alongside the Delaware river, runs straight
+          through Yardley. From 1832 to 1930 the canal was used to ship goods
+          from Northern Pennsylvania to Philadelphia.
+        </p>
+      </div>
+      <picture class="city-img" id="city-image3">
+        <source media="(max-width: 450px)" srcset="images/corner-425.jpg" />
+        <source media="(min-width: 451px)" srcset="images/corner-425.jpg" />
+        <img
+          class="yardley-image"
+          src="images/corner-425.jpg"
+          alt="Corner of Afton and Main"
+          loading="lazy"
+        />
+      </picture>
+      <div class="city-events">
+        <h3>There is plenty to do in Yardley!</h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.dcnr.pa.gov/StateParks/FindAPark/DelawareCanalStatePark/Pages/default.aspx"
+              >Walk the canal path</a
+            >
+          </li>
+          <li><a href="https://www.lakeafton.org/">Fish in Lake Afton</a></li>
+          <li>
+            <a href="https://www.nps.gov/upde/index.htm"
+              >Enjoy the Delaware river</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.visitbuckscounty.com/things-to-do/planning-ideas/birdwatching-in-bucks-county/"
+              >Bird watching galore</a
+            >
+          </li>
+          <li>
+            <a href="https://www.yardleyboro.com/experience-yardley"
+              >Dining and shopping</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://calendar.buckslib.org/calendar?cid=3891&t=d&d=0000-00-00&cal=3891&ct=49976&inc=0"
+              >Virtual library events</a
+            >
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <div class="contact-info-foot">
+        <p class="phone">333-777-3737</p>
+        <p class="address">33 Main St., Yardley PA</p>
+        <p class="email">yardleychamber@yardleyborough.gov</p>
+      </div>
+      <div class="social-links-foot">
+        <span class="t-logo"
+          ><a href="https://www.twitter.com" target="_blank"
+            ><img
+              src="images/twitter1.png"
+              alt="twitter link"
+              class="social-logo"
+            />
+          </a>
+        </span>
+        <span class="f-logo">
+          <a href="https://www.facebook.com" target="_blank"
+            ><img
+              src="images/facebook1.png"
+              alt="facebook link"
+              class="social-logo"
+            /> </a
+        ></span>
+      </div>
+      <p>
+        &copy; <span id="currentyear"></span> | Jahnelle A. Wengler |
+        Pennsylvania |
+        <a href="https://www.byui.edu/online" target="_blank"
+          >BYUI Online Learning</a
+        >
+        | <a href="attributions.html">Attributions</a> | Last Updated:
+        <span id="currentdate"></span>
+      </p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/townweather.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Oswald", "Cardo"],
+        },
+      });
+    </script>
+  </body>
+</html>

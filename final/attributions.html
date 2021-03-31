@@ -1,7 +1,138 @@
-<div><p>w3schools.com for the help with alert boxes</p></div>
-<div><p>Cramer's Bakery for permission to use their logo</p></div>
-<div><p>Indian Garden for permission to use their logo</p></div>
-<div><p>Commonplace Reader for permission to use their logo</p></div>
-<div><p>Openweathermap for use of their weather API</p></div>
-<div><p>Facebook.com for the use of their logo</p></div>
-<div><p>Twitter.com for the use of their logo</p></div>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Yardley Pennsylvania Chamber of Commerce attribution page"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+    <title>Yardley Chamber of Commerce</title>
+  </head>
+  <body>
+    <header>
+      <picture class="header-img">
+        <source media="(max-width: 450px)" srcset="images/hero-425.jpg" />
+        <source media="(min-width: 451px)" srcset="images/hero-850.jpg" />
+        <img
+          class="intro-image"
+          src="images/hero-425.jpg"
+          alt="Yardley downtown"
+        />
+      </picture>
+
+      <section class="header-text">
+        <picture>
+          <source media="(max-width: 450px)" srcset="images/logo-100.png" />
+          <source media="(min-width: 451px)" srcset="images/logo-100.png" />
+          <img
+            id="logo"
+            src="images/logo-100.png"
+            alt="Yardley Chamber logo"
+            loading="lazy"
+          />
+        </picture>
+        <h1>YARDLEY CHAMBER OF COMMERCE</h1>
+      </section>
+      <div class="social-links">
+        <span id="t-logo"
+          ><a href="https://www.twitter.com" target="_blank"
+            ><img
+              src="images/twitter1.png"
+              alt="twitter link"
+              class="social-logo"
+            />
+          </a>
+        </span>
+        <span id="f-logo">
+          <a href="https://www.facebook.com" target="_blank"
+            ><img
+              src="images/facebook1.png"
+              alt="facebook link"
+              class="social-logo"
+            /> </a
+        ></span>
+      </div>
+      <button class="nav-btn" onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav>
+      <ul id="nav-hide" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="city.html">Yardley</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div><p>w3schools.com for the help with alert boxes</p></div>
+      <div><p>Cramer's Bakery for permission to use their logo</p></div>
+      <div><p>Indian Garden for permission to use their logo</p></div>
+      <div><p>Commonplace Reader for permission to use their logo</p></div>
+      <div><p>Openweathermap for use of their weather API</p></div>
+      <div><p>Facebook.com for the use of their logo</p></div>
+      <div><p>Twitter.com for the use of their logo</p></div>
+      <div>
+        <p>Enric Cruz Lopez and Pexel for the background and hero images</p>
+      </div>
+      <div>
+        <p>worldpopulationreview.com for the demographic stats</p>
+      </div>
+      <div>yardleyboro.com for the events listings</div>
+    </main>
+    <footer>
+      <div class="contact-info-foot">
+        <p class="phone">333-777-3737</p>
+        <p class="address">33 Main St., Yardley PA</p>
+        <p class="email">yardleychamber@yardleyborough.gov</p>
+      </div>
+      <div class="social-links-foot">
+        <span class="t-logo"
+          ><a href="https://www.twitter.com" target="_blank"
+            ><img
+              src="images/twitter1.png"
+              alt="twitter link"
+              class="social-logo"
+            />
+          </a>
+        </span>
+        <span class="f-logo">
+          <a href="https://www.facebook.com" target="_blank"
+            ><img
+              src="images/facebook1.png"
+              alt="facebook link"
+              class="social-logo"
+            /> </a
+        ></span>
+      </div>
+      <p>
+        &copy; <span id="currentyear"></span> | Jahnelle A. Wengler |
+        Pennsylvania |
+        <a href="https://www.byui.edu/online" target="_blank"
+          >BYUI Online Learning</a
+        >
+        | <a href="attributions.html">Attributions</a> | Last Updated:
+        <span id="currentdate"></span>
+      </p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/townweather.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Oswald", "Cardo"],
+        },
+      });
+    </script>
+  </body>
+</html>
