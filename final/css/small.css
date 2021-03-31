@@ -165,7 +165,8 @@ nav button {
 .business-info,
 .city-history,
 .city-stats,
-.city-events {
+.city-events,
+#thanks-main {
   text-align: center;
   color: white;
   background-color: var(--primary);
@@ -296,6 +297,100 @@ img.yardley-image {
 }
 .city-events a:visited {
   color: white;
+}
+.join-header {
+  color: var(--secondary2);
+  margin: auto;
+  text-align: center;
+}
+form {
+  background-color: var(--primary);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px auto;
+}
+form fieldset {
+  margin: 2rem 10px;
+  border: 2px solid var(--accent1);
+  border-radius: 10px;
+  padding: 0.5rem 4%;
+}
+
+form legend {
+  color: var(--accent1);
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  font-size: 1.1em;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: var(--secondary2);
+  font-size: 0.9rem;
+}
+input::placeholder {
+  color: var(--primary);
+}
+form label.top input,
+form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px white;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: var(--secondary1);
+  width: 90%;
+  max-width: 20rem;
+  background-color: white;
+}
+form label.top select {
+  width: 100%;
+  max-width: 21.5rem;
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.85rem 0;
+  color: white;
+}
+form label.radio {
+  padding: 0.4rem 0;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: var(--accent2);
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 70px;
+  width: 96%;
+  max-width: 20rem;
+}
+form input.submitBtn:hover {
+  background-color: var(--accent1);
+  color: #202030;
+}
+
+form label.top input:required {
+  border-left: var(--accent2) solid 6px;
+}
+form label.top input:required:valid {
+  border-left: var(--secondary2) solid 6px;
+}
+#member-perks {
+  color: white;
+}
+.thanks-header {
+  text-align: center;
+  margin: 50px 0;
+}
+#thanks-main {
+  margin-bottom: 30px;
+  width: 60%;
 }
 footer {
   background-color: var(--secondary2);

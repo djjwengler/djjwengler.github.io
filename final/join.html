@@ -71,7 +71,123 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <main></main>
+    <main>
+      <main id="join-main">
+        <h1 class="join-header">Become a Member!</h1>
+
+        <form action="thanks.html" method="get">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label class="top"
+              >First Name*
+              <input type="text" name="fname" required pattern="[A-Za-z\s]{1,}"
+            /></label>
+            <label class="top"
+              >Last Name*
+              <input type="text" name="lname" required pattern="[A-Za-z\s]{3,}"
+            /></label>
+            <label class="top">Title <input type="text" name="title" /></label>
+            <label class="top"
+              >Email*
+              <input
+                type="email"
+                name="email"
+                placeholder="user@gmail.com"
+                required
+            /></label>
+            <label class="top"
+              >Cell Phone <input type="tel" name="phone"
+            /></label>
+          </fieldset>
+          <fieldset>
+            <legend>Business Information</legend>
+            <label class="top"
+              >Business Name*<input type="text" name="bname" required />
+            </label>
+            <label class="top"
+              >Business Address<input type="text" name="address" />
+            </label>
+            <label class="top"
+              >Business Website<input type="url" name="url" />
+              <label class="top"
+                >Business Description<input type="text" name="desc" />
+              </label>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Membership Level</legend>
+            <div>
+              What level of membership would you like? (Annual fees listed.)
+            </div>
+            <label class="sbs radio"
+              ><input type="radio" name="mlevel" value="non" /> Non-profit
+              ($100)</label
+            >
+            <label class="sbs radio"
+              ><input type="radio" name="mlevel" value="bronze" /> Bronze
+              ($200)</label
+            >
+
+            <label class="sbs radio"
+              ><input type="radio" name="mlevel" value="silver" /> Silver
+              ($400)</label
+            >
+            <label class="sbs radio"
+              ><input type="radio" name="mlevel" value="gold" /> Gold
+              ($1000)</label
+            >
+          </fieldset>
+
+          <input
+            class="submitBtn"
+            type="submit"
+            value="Join Yardley Chamber of Commerce!"
+          />
+        </form>
+        <form id="member-perks">
+          <fieldset>
+            <legend>Membership Level Perks</legend>
+            <section>
+              <h2>Non-profit</h2>
+              <ul>
+                <li>Annual fee: $100</li>
+                <li>Bronze membership perks</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Bronze</h2>
+              <ul>
+                <li>Annual fee: $200</li>
+                <li>Events posted on Chamber's calendar</li>
+                <li>Member rates for all Chamber events</li>
+                <li>Member rates for business insurance</li>
+                <li>Referrals by fellow Chamber members</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Silver</h2>
+              <ul>
+                <li>Annual fee: $300</li>
+                <li>Bronze membership perks</li>
+                <li>Eligible to be highlighted on Chamber website</li>
+                <li>Enhanced listing on website directory</li>
+                <li>One "Silver members only" deal per year</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Gold</h2>
+              <ul>
+                <li>Annual fee: $1000</li>
+                <li>Silver membership perks</li>
+                <li>Free booth/table at every Chamber event</li>
+                <li>Annual feature on Chamber facebook page</li>
+                <li>One "Gold members only" deal per year</li>
+              </ul>
+            </section>
+          </fieldset>
+        </form>
+      </main>
+    </main>
     <footer>
       <div class="contact-info-foot">
         <p class="phone">333-777-3737</p>
