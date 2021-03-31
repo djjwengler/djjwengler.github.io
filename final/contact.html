@@ -71,7 +71,47 @@
         <li class="current-page"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <main></main>
+    <main>
+      <h2 class="con-header">Contact Us</h2>
+      <div class="contact-info-page">
+        <p class="phone"><span class="CVE">Call:</span> 333-777-3737</p>
+        <p class="address">
+          <span class="CVE">Visit:</span> 33 Main St., Yardley PA
+        </p>
+        <p class="email">
+          <span class="CVE">Email:</span> yardleychamber@yardleyborough.gov
+        </p>
+      </div>
+      <form class="contactus" action="thanksemail.html" method="get">
+        <fieldset>
+          <legend>Send Us a Message</legend>
+          <label class="top"
+            >Name* <input type="text" name="name" required
+          /></label>
+
+          <label class="top"
+            >Email*
+            <input
+              type="email"
+              name="email"
+              placeholder="user@gmail.com"
+              required
+          /></label>
+          <label class="top"
+            >Cell Phone <input type="tel" name="phone"
+          /></label>
+          <label class="top"
+            >Message<textarea name="extrainfo"></textarea>
+          </label>
+        </fieldset>
+        <input
+          class="submitBtn"
+          id="contactBtn"
+          type="submit"
+          value="Send Message"
+        />
+      </form>
+    </main>
     <footer>
       <div class="contact-info-foot">
         <p class="phone">333-777-3737</p>

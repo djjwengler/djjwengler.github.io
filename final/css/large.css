@@ -140,6 +140,10 @@
   div.one-col section img {
     height: 45%;
   }
+
+  .thanks-foot {
+    border-radius: 20px;
+  }
   footer {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;

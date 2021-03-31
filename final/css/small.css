@@ -172,7 +172,8 @@ nav button {
 .city-history,
 .city-stats,
 .city-events,
-#thanks-main {
+#thanks-main,
+.contact-info-page {
   text-align: center;
   color: white;
   background-color: var(--primary);
@@ -187,6 +188,9 @@ nav button {
   border-radius: 10px;
   padding: 20px;
   font-size: 1.2rem;
+}
+#join-btn:hover {
+  opacity: 0.7;
 }
 .weather-info,
 .town-events,
@@ -309,7 +313,8 @@ img.yardley-image {
   color: white;
 }
 .join-header,
-.dir-header {
+.dir-header,
+.con-header {
   color: var(--accent1);
   margin: auto;
   text-align: center;
@@ -345,7 +350,8 @@ input::placeholder {
   color: var(--primary);
 }
 form label.top input,
-form label.top select {
+form label.top select,
+textarea {
   -webkit-appearance: none;
   display: block;
   font-size: 1rem;
@@ -447,6 +453,28 @@ form label.top input:required:valid {
 .cards section a:hover {
   color: var(--accent1);
 }
+.contact-info-page {
+  width: 70%;
+  margin: 30px auto;
+}
+.CVE {
+  color: var(--accent1);
+}
+.contactus {
+  margin: auto;
+  width: 70%;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+}
+
+#contactBtn {
+  margin: auto;
+  grid-row: 2/3;
+}
+
 footer {
   background-color: var(--secondary2);
   padding: 20px;
