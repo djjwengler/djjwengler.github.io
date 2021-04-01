@@ -81,7 +81,9 @@
     </nav>
     <main id="index-main">
       <div class="join">
-        <button id="join-btn"><a href="join.html"> JOIN US!</a></button>
+        <button id="join-btn" onclick="document.location='join.html'">
+          JOIN US!
+        </button>
         <p>Join Yardley Chamber of Commerce today!</p>
       </div>
       <div class="weather-info">
@@ -101,22 +103,14 @@
         <p class="address">33 Main St.</p>
         <p class="address2">Yardley PA</p>
       </div>
-      <picture class="town-img" id="image1">
-        <source
-          media="(max-width: 450px)"
-          srcset="images/uspsacross-450bw.jpg"
-        />
-        <source
-          media="(min-width: 451px)"
-          srcset="images/uspsacross-450bw.jpg"
-        />
-        <img
-          class="town-image"
-          src="images/uspsacross-450bw.jpg"
-          alt="Yardley Post Office"
-          loading="lazy"
-        />
-      </picture>
+
+      <img
+        id="image1"
+        class="town-image"
+        src="images/usps-400sq.jpg"
+        alt="Yardley Post Office"
+        loading="lazy"
+      />
       <div class="chamber-info">
         <h2>What is the Yardley Chamber of Commerce?</h2>
         <p>
@@ -131,15 +125,14 @@
           <p class="email">yardleychamber@yardleyborough.gov</p>
         </div>
       </div>
-      <picture id="image3">
-        <source media="(max-width: 450px)" srcset="images/mainst-425bw.jpg" />
-        <source media="(min-width: 451px)" srcset="images/mainst-425bw.jpg" />
-        <img
-          class="town-image"
-          src="images/mainst-425bw.jpg"
-          alt="Yardley Main St"
-        />
-      </picture>
+
+      <img
+        id="image3"
+        class="town-image"
+        src="images/mainst-400sq.jpg"
+        alt="Yardley Main St"
+        loading="lazy"
+      />
       <div class="town-events">
         <h3>Upcoming Town Events</h3>
         <p>Monthly Meeting: 2nd Tuesday of the month</p>
@@ -150,24 +143,21 @@
         <p>August 28: End of Summer Bash, Yardley Library</p>
       </div>
 
-      <picture id="image2">
-        <source media="(max-width: 450px)" srcset="images/mill-425bw.jpg" />
-        <source media="(min-width: 451px)" srcset="images/mill-425bw.jpg" />
-        <img
-          class="town-image"
-          src="images/mill-425bw.jpg"
-          alt="Yardley mill"
-        />
-      </picture>
-      <picture id="image4">
-        <source media="(max-width: 450px)" srcset="images/donkey-425bw.jpg" />
-        <source media="(min-width: 451px)" srcset="images/donkey-425bw.jpg" />
-        <img
-          class="town-image"
-          src="images/donkey-425bw.jpg"
-          alt="Donkey mural"
-        />
-      </picture>
+      <img
+        id="image2"
+        class="town-image"
+        src="images/mill-400sq.jpg"
+        alt="Yardley mill"
+        loading="lazy"
+      />
+
+      <img
+        id="image4"
+        class="town-image"
+        src="images/donkey-400sq.jpg"
+        alt="Donkey mural"
+        loading="lazy"
+      />
       <div class="business-info" id="business1">
         <img
           src="images/indian-450.jpg"
@@ -239,6 +229,7 @@
               src="images/twitter1.png"
               alt="twitter link"
               class="social-logo"
+              loading="lazy"
             />
           </a>
         </span>
@@ -248,6 +239,7 @@
               src="images/facebook1.png"
               alt="facebook link"
               class="social-logo"
+              loading="lazy"
             /> </a
         ></span>
       </div>

@@ -16,7 +16,7 @@
     "logo": "images/cramers-200.jpg",
     "url": "https://cramersbakery.com/"
     },
-    
+
     {
     "name": "Indian Garden",
     "address": "676 Stony Hill Rd",
@@ -25,13 +25,7 @@
     "url": "http://www.indiangardenyardley.com/"
     },
 
-    {
-    "name": "Bagel Train",
-    "address": "175 S Main St",
-    "phone": "(215) 321-4474",
-    "logo": "images/bagel-200.jpg",
-    "url": "https://www.facebook.com/pages/Bagel-Train-Inc/115527091803348"
-    },
+ 
 
     {
     "name": "Bespoke Cabinetry",
@@ -49,21 +43,6 @@
     "url": "https://www.yardleycc.com/"
     },
 
-    {
-    "name": "Yardley Florist",
-    "address": "175 S. Main St.",
-     "phone": "(215) 493-5656",
-    "logo": "images/florist-200.jpg",
-    "url": "https://www.yardley-florist.com/"
-    },
-
-    {
-    "name": "Hair Dr",
-    "address": "79 S. Main Street",
-    "phone": "(267) 475-8165",
-    "logo": "images/hairdr-200.jpg",
-    "url": "https://localhairdr.com/"
-    },
 
     {
     "name": "T. Foster & Co.",

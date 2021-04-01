@@ -1,0 +1,337 @@
+{
+  "lat": 40.2457,
+  "lon": -74.846,
+  "timezone": "America/New_York",
+  "timezone_offset": -14400,
+  "current": {
+  "dt": 1617292832,
+  "sunrise": 1617273759,
+  "sunset": 1617319400,
+  "temp": 43.43,
+  "feels_like": 36.16,
+  "pressure": 1012,
+  "humidity": 68,
+  "dew_point": 33.58,
+  "uvi": 3.79,
+  "clouds": 100,
+  "visibility": 10000,
+  "wind_speed": 15.26,
+  "wind_deg": 327,
+  "wind_gust": 22.15,
+  "weather": [
+  {
+  "id": 804,
+  "main": "Clouds",
+  "description": "overcast clouds",
+  "icon": "04d"
+  }
+  ]
+  },
+  "daily": [
+  {
+  "dt": 1617296400,
+  "sunrise": 1617273759,
+  "sunset": 1617319400,
+  "temp": {
+  "day": 45.81,
+  "min": 36.5,
+  "max": 58.12,
+  "night": 36.5,
+  "eve": 42.67,
+  "morn": 41.47
+  },
+  "feels_like": {
+  "day": 39.13,
+  "night": 34.14,
+  "eve": 35.56,
+  "morn": 34.14
+  },
+  "pressure": 1012,
+  "humidity": 57,
+  "dew_point": 31.53,
+  "wind_speed": 15.52,
+  "wind_deg": 326,
+  "weather": [
+  {
+  "id": 501,
+  "main": "Rain",
+  "description": "moderate rain",
+  "icon": "10d"
+  }
+  ],
+  "clouds": 99,
+  "pop": 1,
+  "rain": 5.62,
+  "uvi": 4.12
+  },
+  {
+  "dt": 1617382800,
+  "sunrise": 1617360061,
+  "sunset": 1617405861,
+  "temp": {
+  "day": 37.58,
+  "min": 29.01,
+  "max": 39.81,
+  "night": 31.71,
+  "eve": 37.44,
+  "morn": 29.01
+  },
+  "feels_like": {
+  "day": 29.46,
+  "night": 19.29,
+  "eve": 29.64,
+  "morn": 19.29
+  },
+  "pressure": 1022,
+  "humidity": 32,
+  "dew_point": 10.51,
+  "wind_speed": 12.91,
+  "wind_deg": 327,
+  "weather": [
+  {
+  "id": 803,
+  "main": "Clouds",
+  "description": "broken clouds",
+  "icon": "04d"
+  }
+  ],
+  "clouds": 69,
+  "pop": 0,
+  "uvi": 2.9
+  },
+  {
+  "dt": 1617469200,
+  "sunrise": 1617446364,
+  "sunset": 1617492322,
+  "temp": {
+  "day": 47.98,
+  "min": 29.91,
+  "max": 51.91,
+  "night": 43.16,
+  "eve": 47.26,
+  "morn": 29.97
+  },
+  "feels_like": {
+  "day": 43.66,
+  "night": 22.23,
+  "eve": 45.32,
+  "morn": 22.23
+  },
+  "pressure": 1026,
+  "humidity": 23,
+  "dew_point": 11.91,
+  "wind_speed": 9.66,
+  "wind_deg": 323,
+  "weather": [
+  {
+  "id": 800,
+  "main": "Clear",
+  "description": "clear sky",
+  "icon": "01d"
+  }
+  ],
+  "clouds": 0,
+  "pop": 0,
+  "uvi": 4.7
+  },
+  {
+  "dt": 1617555600,
+  "sunrise": 1617532667,
+  "sunset": 1617578783,
+  "temp": {
+  "day": 47.91,
+  "min": 41.2,
+  "max": 50.38,
+  "night": 41.67,
+  "eve": 46,
+  "morn": 43.79
+  },
+  "feels_like": {
+  "day": 44.98,
+  "night": 42.28,
+  "eve": 41.81,
+  "morn": 42.28
+  },
+  "pressure": 1020,
+  "humidity": 62,
+  "dew_point": 35.53,
+  "wind_speed": 6.4,
+  "wind_deg": 317,
+  "weather": [
+  {
+  "id": 804,
+  "main": "Clouds",
+  "description": "overcast clouds",
+  "icon": "04d"
+  }
+  ],
+  "clouds": 100,
+  "pop": 0,
+  "uvi": 3.43
+  },
+  {
+  "dt": 1617642000,
+  "sunrise": 1617618971,
+  "sunset": 1617665244,
+  "temp": {
+  "day": 57.6,
+  "min": 37.58,
+  "max": 58.05,
+  "night": 44.76,
+  "eve": 49.86,
+  "morn": 40.14
+  },
+  "feels_like": {
+  "day": 54.79,
+  "night": 34.18,
+  "eve": 46.29,
+  "morn": 34.18
+  },
+  "pressure": 1018,
+  "humidity": 37,
+  "dew_point": 31.98,
+  "wind_speed": 13.27,
+  "wind_deg": 324,
+  "weather": [
+  {
+  "id": 800,
+  "main": "Clear",
+  "description": "clear sky",
+  "icon": "01d"
+  }
+  ],
+  "clouds": 10,
+  "pop": 0,
+  "uvi": 0.39
+  },
+  {
+  "dt": 1617728400,
+  "sunrise": 1617705275,
+  "sunset": 1617751705,
+  "temp": {
+  "day": 56.62,
+  "min": 38.97,
+  "max": 58.66,
+  "night": 45.18,
+  "eve": 49.78,
+  "morn": 40.6
+  },
+  "feels_like": {
+  "day": 53.11,
+  "night": 34.99,
+  "eve": 47.16,
+  "morn": 34.99
+  },
+  "pressure": 1014,
+  "humidity": 24,
+  "dew_point": 20.5,
+  "wind_speed": 12.41,
+  "wind_deg": 317,
+  "weather": [
+  {
+  "id": 804,
+  "main": "Clouds",
+  "description": "overcast clouds",
+  "icon": "04d"
+  }
+  ],
+  "clouds": 85,
+  "pop": 0,
+  "uvi": 1
+  },
+  {
+  "dt": 1617814800,
+  "sunrise": 1617791580,
+  "sunset": 1617838166,
+  "temp": {
+  "day": 60.87,
+  "min": 40.5,
+  "max": 61.97,
+  "night": 50.09,
+  "eve": 55.17,
+  "morn": 43.21
+  },
+  "feels_like": {
+  "day": 58.53,
+  "night": 43.21,
+  "eve": 52.88,
+  "morn": 43.21
+  },
+  "pressure": 1013,
+  "humidity": 40,
+  "dew_point": 36.39,
+  "wind_speed": 2.06,
+  "wind_deg": 291,
+  "weather": [
+  {
+  "id": 803,
+  "main": "Clouds",
+  "description": "broken clouds",
+  "icon": "04d"
+  }
+  ],
+  "clouds": 79,
+  "pop": 0,
+  "uvi": 1
+  },
+  {
+  "dt": 1617901200,
+  "sunrise": 1617877885,
+  "sunset": 1617924627,
+  "temp": {
+  "day": 66.09,
+  "min": 46.81,
+  "max": 66.09,
+  "night": 51.06,
+  "eve": 52.81,
+  "morn": 48.81
+  },
+  "feels_like": {
+  "day": 63.95,
+  "night": 48.81,
+  "eve": 51.55,
+  "morn": 48.81
+  },
+  "pressure": 1010,
+  "humidity": 33,
+  "dew_point": 36.1,
+  "wind_speed": 7.25,
+  "wind_deg": 187,
+  "weather": [
+  {
+  "id": 500,
+  "main": "Rain",
+  "description": "light rain",
+  "icon": "10d"
+  }
+  ],
+  "clouds": 91,
+  "pop": 1,
+  "rain": 2.04,
+  "uvi": 1
+  }
+  ],
+  "alerts": [
+    {
+      "sender_name": "NWS Tulsa (Eastern Oklahoma)",
+      "event": "Wind Advisory",
+      "start": 1597341600,
+      "end": 1597366800,
+      "description": "...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO\n8 PM CDT THIS EVENING...\n* WHAT...Heat index values of 105 to 109 degrees expected.\n* WHERE...Creek, Okfuskee, Okmulgee, McIntosh, Pittsburg,\nLatimer, Pushmataha, and Choctaw Counties.\n* WHEN...From 1 PM to 8 PM CDT Thursday.\n* IMPACTS...The combination of hot temperatures and high\nhumidity will combine to create a dangerous situation in which\nheat illnesses are possible."
+    },
+    {
+      "sender_name": "NWS Tulsa (Eastern Oklahoma)",
+      "event": "Rain Advisory",
+      "start": 1597341600,
+      "end": 1597366800,
+      "description": "...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO\n8 PM CDT THIS EVENING...\n* WHAT...Heat index values of 105 to 109 degrees expected.\n* WHERE...Creek, Okfuskee, Okmulgee, McIntosh, Pittsburg,\nLatimer, Pushmataha, and Choctaw Counties.\n* WHEN...From 1 PM to 8 PM CDT Thursday.\n* IMPACTS...The combination of hot temperatures and high\nhumidity will combine to create a dangerous situation in which\nheat illnesses are possible."
+    },
+    {
+      "sender_name": "NWS Tulsa (Eastern Oklahoma)",
+      "event": "Heat Advisory",
+      "start": 1597341600,
+      "end": 1597366800,
+      "description": "...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO\n8 PM CDT THIS EVENING...\n* WHAT...Heat index values of 105 to 109 degrees expected.\n* WHERE...Creek, Okfuskee, Okmulgee, McIntosh, Pittsburg,\nLatimer, Pushmataha, and Choctaw Counties.\n* WHEN...From 1 PM to 8 PM CDT Thursday.\n* IMPACTS...The combination of hot temperatures and high\nhumidity will combine to create a dangerous situation in which\nheat illnesses are possible."
+    }
+  ]
+  }

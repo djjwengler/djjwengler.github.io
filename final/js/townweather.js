@@ -1,10 +1,10 @@
 const apiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=40.2457&lon=-74.8460&units=imperial&exclude=hourly,minutely&appid=88c0bc34a4fb7c35a743678592cd2c89';
 
+
+
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
-
     let temp = jsObject.current.temp;
     document.getElementById('tempnum').textContent = temp.toFixed(1);
     document.getElementById('now').textContent = jsObject.current.weather[0].description;
@@ -12,7 +12,6 @@ fetch(apiURL)
     
     let dayArray = ["SUN", "MON", "TUES", "WEDS", "THURS", "FRI", "SAT"];
     const justList = jsObject.daily;
- console.log(justList);
 
     for (let i=1; i<4; i++){
         let li = document.createElement('li');
