@@ -16,6 +16,14 @@
     "logo": "images/cramers-200.jpg",
     "url": "https://cramersbakery.com/"
     },
+    
+    {
+    "name": "Indian Garden",
+    "address": "676 Stony Hill Rd",
+    "phone": "(215) 369-7016",
+    "logo": "images/indian-200.jpg",
+    "url": "http://www.indiangardenyardley.com/"
+    },
 
     {
     "name": "Bagel Train",
@@ -55,14 +63,6 @@
     "phone": "(267) 475-8165",
     "logo": "images/hairdr-200.jpg",
     "url": "https://localhairdr.com/"
-    },
-
-    {
-    "name": "Indian Garden",
-    "address": "676 Stony Hill Rd",
-    "phone": "(215) 369-7016",
-    "logo": "images/indian-200.jpg",
-    "url": "http://www.indiangardenyardley.com/"
     },
 
     {

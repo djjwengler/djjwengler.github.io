@@ -23,7 +23,7 @@ fetch(requestURL)
       a.textContent = directory[i].name;
       a.setAttribute('href', directory[i].url);
       a.setAttribute('target', '_blank');
-      img.setAttribute('alt', directory[i].name);
+      img.setAttribute('alt', directory[i].name + ' logo');
       img.setAttribute('loading', 'lazy');
 
       card.appendChild(img);
