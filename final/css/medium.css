@@ -220,4 +220,7 @@
   .contactus {
     width: 400px;
   }
+  #board-list h3 {
+    font-size: 1.3em;
+  }
 }
