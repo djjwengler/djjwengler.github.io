@@ -151,7 +151,9 @@ nav a:hover {
   color: var(--secondary1);
   background-color: var(--accent1);
 }
-
+nav ul li a {
+  font-size: 1.1em;
+}
 nav ul li.current-page a {
   text-decoration: underline;
   background-color: var(--primary);
@@ -184,6 +186,11 @@ nav button {
   margin: auto;
   border-radius: 10px;
 }
+#join-main {
+  width: 95%;
+  margin: auto;
+}
+
 #join-btn {
   color: white;
   background-color: var(--accent2);
@@ -196,7 +203,8 @@ nav button {
   text-decoration: none;
 }
 #join-btn:hover {
-  opacity: 0.7;
+  background-color: var(--accent1);
+  color: var(--secondary1);
 }
 .weather-info,
 .town-events,
@@ -292,7 +300,9 @@ img.mural-image {
   list-style-type: none;
   margin-left: -30px;
 }
-
+.city-stats ul li {
+  line-height: 1.4em;
+}
 .city-history ul,
 .city-events ul {
   text-align: left;
@@ -304,7 +314,9 @@ img.mural-image {
 .city-events h4 {
   margin-top: -10px;
   font-size: 1.1em;
+  font-style: italic;
 }
+
 .city-events a {
   text-decoration: none;
   color: white;
