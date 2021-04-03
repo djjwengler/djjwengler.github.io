@@ -15,9 +15,9 @@ fetch(apiURL)
 
     for (let i=1; i<4; i++){
         let li = document.createElement('li');
-        let h4 = document.createElement('h4');
+        let h4 = document.createElement('h3');
         let img = document.createElement('img');
-        let h4_2 = document.createElement('h4');
+        let h4_2 = document.createElement('h3');
         let date = new Date((justList[i].dt) * 1000);
         let dayNum = date.getDay();
 
