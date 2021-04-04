@@ -31,7 +31,7 @@
   main#index-main .join {
     position: -webkit-sticky;
     position: sticky;
-    top: 65px;
+    top: 70px;
   }
   #summary-head {
     font-size: 1.2em;

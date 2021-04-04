@@ -25,10 +25,10 @@
     <header>
       <picture class="header-img">
         <source
-          media="(max-width: 450px)"
+          media="(max-width: 550px)"
           srcset="images/heroflip-425-min.jpg"
         />
-        <source media="(min-width: 451px)" srcset="images/heroflip-850.jpg" />
+        <source media="(min-width: 551px)" srcset="images/heroflip-850.jpg" />
         <img
           class="intro-image"
           src="images/heroflip-425-min.jpg"
@@ -38,8 +38,8 @@
 
       <section class="header-text">
         <picture>
-          <source media="(max-width: 450px)" srcset="images/logo-50.png" />
-          <source media="(min-width: 451px)" srcset="images/logo-100.png" />
+          <source media="(max-width: 550px)" srcset="images/logo-50.png" />
+          <source media="(min-width: 551px)" srcset="images/logo-100.png" />
           <img
             id="logo"
             src="images/logo-50.png"
@@ -107,7 +107,7 @@
       <img
         id="image1"
         class="town-image"
-        src="images/usps-400sq.jpg"
+        src="images/usps-400sq-min.jpg"
         alt="Yardley Post Office"
         loading="lazy"
       />
@@ -129,7 +129,7 @@
       <img
         id="image3"
         class="town-image"
-        src="images/mainst-400sq.jpg"
+        src="images/mainst-400sq-min.jpg"
         alt="Yardley Main St"
         loading="lazy"
       />
@@ -146,7 +146,7 @@
       <img
         id="image2"
         class="town-image"
-        src="images/mill-400sq.jpg"
+        src="images/mill-400sq-min.jpg"
         alt="Yardley mill"
         loading="lazy"
       />
@@ -154,17 +154,25 @@
       <img
         id="image4"
         class="town-image"
-        src="images/donkey-400sq.jpg"
+        src="images/donkey-400sq-min.jpg"
         alt="Donkey mural"
         loading="lazy"
       />
       <div class="business-info" id="business1">
-        <img
-          src="images/indian-450.jpg"
-          alt="logo for Indian Garden"
-          loading="lazy"
-          class="business-img"
-        />
+        <picture>
+          <source
+            media="(max-width: 550px)"
+            srcset="images/indian-200-min.jpg"
+          />
+          <source media="(min-width: 551px)" srcset="images/indian-450.jpg" />
+          <img
+            src="images/indian-200-min.jpg"
+            alt="logo for Indian Garden"
+            loading="lazy"
+            class="business-img"
+          />
+        </picture>
+
         <p>
           <a href="http://www.indiangardenyardley.com/" target="_blank"
             >www.indiangardenyardley.com</a
@@ -178,12 +186,23 @@
         </p>
       </div>
       <div class="business-info" id="business2">
-        <img
-          src="images/commonplace-450.jpg"
-          alt="logo for Commonplace Reader"
-          loading="lazy"
-          class="business-img"
-        />
+        <picture>
+          <source
+            media="(max-width: 550px)"
+            srcset="images/commonplace2-200-min.jpg"
+          />
+          <source
+            media="(min-width: 551px)"
+            srcset="images/commonplace-450.jpg"
+          />
+          <img
+            src="images/commonplace2-200-min.jpg"
+            alt="logo for Commonplace Reader"
+            loading="lazy"
+            class="business-img"
+          />
+        </picture>
+
         <p>
           <a href="https://commonplace-reader.com/" target="_blank"
             >www.commonplace-reader.com</a
@@ -197,12 +216,19 @@
         </p>
       </div>
       <div class="business-info" id="business3">
-        <img
-          src="images/cramers-450.jpg"
-          alt="logo for Cramer's Bakery"
-          loading="lazy"
-          class="business-img"
-        />
+        <picture>
+          <source
+            media="(max-width: 550px)"
+            srcset="images/cramers-200-min.jpg"
+          />
+          <source media="(min-width: 551px)" srcset="images/cramers-450.jpg" />
+          <img
+            src="images/cramers-200-min.jpg"
+            alt="logo for Cramer's Bakery"
+            loading="lazy"
+            class="business-img"
+          />
+        </picture>
         <p>
           <a href="https://cramersbakery.com/" target="_blank"
             >www.cramersbakery.com</a
