@@ -5,7 +5,7 @@
     "name": "Commonplace Reader",
     "address": "49 Main Street",
     "phone": "(215) 420-2620",
-    "logo": "images/commonplace2-200.jpg",
+    "logo": "images/commonplace2-200-min.jpg",
     "url": "https://commonplace-reader.com/"
     },
 
@@ -13,7 +13,7 @@
     "name": "Cramer's Bakery",
     "address": "16 E Afton Ave",
     "phone": "(215) 493-2760",
-    "logo": "images/cramers-200.jpg",
+    "logo": "images/cramers-200-min.jpg",
     "url": "https://cramersbakery.com/"
     },
 
@@ -21,7 +21,7 @@
     "name": "Indian Garden",
     "address": "676 Stony Hill Rd",
     "phone": "(215) 369-7016",
-    "logo": "images/indian-200.jpg",
+    "logo": "images/indian-200-min.jpg",
     "url": "http://www.indiangardenyardley.com/"
     },
 
@@ -31,7 +31,7 @@
     "name": "Bespoke Cabinetry",
     "address": "166 S Main Street",
     "phone": "(267) 454-6858",
-    "logo": "images/bespoke-200.jpg",
+    "logo": "images/bespoke-200-min.jpg",
     "url": "https://www.wholesalekitchens.us/"
     },
 
@@ -39,7 +39,7 @@
     "name": "Yardley Country Club",
     "address": "1010 Reading Ave",
     "phone": "(215) 493-4531",
-    "logo": "images/club-200.jpg",
+    "logo": "images/club-200-min.jpg",
     "url": "https://www.yardleycc.com/"
     },
 
@@ -48,7 +48,7 @@
     "name": "T. Foster & Co.",
     "address": "7 W. Afton Ave",
     "phone": "(215) 493-6100",
-    "logo": "images/jewelers-200.jpg",
+    "logo": "images/jewelers-200-min.jpg",
     "url": "https://www.tfosterjewelers.com/"
     },
 
@@ -56,7 +56,7 @@
     "name": "Yardley Animal Kennels",
     "address": "1085 Reading Ave",
     "phone": "(215) 493-2717",
-    "logo": "images/kennels-200.jpg",
+    "logo": "images/kennels-200-min.jpg",
     "url": "https://www.yardleyanimalkennels.com/"
     },
 
@@ -64,7 +64,7 @@
     "name": "Yardley Pharmacy & Supply",
     "address": "175 S. Main St.",
     "phone": "(267) 573-4555",
-    "logo": "images/pharmacy-200.jpg",
+    "logo": "images/pharmacy-200-min.jpg",
     "url": "https://yardleypharmacyandsupply.com/"
     },
 
@@ -72,7 +72,7 @@
     "name": "So Jeong Salon",
     "address": "62 N. Main St.",
     "phone": "(267) 229-2827",
-    "logo": "images/sojeong-200.jpg",
+    "logo": "images/sojeong-200-min.jpg",
     "url": "https://www.instagram.com/sojeongsalon/?hl=en"
     }
     ]

@@ -24,6 +24,9 @@
     grid-column: 4/5;
     margin: 3px;
   }
+  #logo {
+    margin-left: 30px;
+  }
   nav ul.hide {
     display: block;
     display: flex;
