@@ -67,7 +67,7 @@ header {
 #logo {
   margin-left: 80px;
 }
-.header-text {
+/*.header-text {
   grid-column: 1/5;
   grid-row: 1/2;
   display: grid;
@@ -82,7 +82,7 @@ header {
 .header-text h1 {
   text-shadow: 2px 2px 2px black;
   text-align: center;
-}
+}*/
 .social-links {
   grid-column: 5/6;
   grid-row: 1/2;
