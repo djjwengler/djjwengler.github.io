@@ -37,7 +37,7 @@ fetch(apiURL)
 }
 if (jsObject.alerts != undefined){
   let alerts = jsObject.alerts;
-  let text = ' for Yardley!';
+  let text = ' for Yardley! <a href="https://api.openweathermap.org/data/2.5/onecall?lat=40.2457&lon=-74.8460&units=imperial&exclude=hourly,minutely,current,daily&appid=88c0bc34a4fb7c35a743678592cd2c89">Details here.</a> ';
   for (let i=0; i < alerts.length; i++){
     if (i === 0){
       text = alerts[i].event + text;
@@ -46,7 +46,7 @@ if (jsObject.alerts != undefined){
       text = alerts[i].event + ' and ' + text;
     }
   }
-  document.getElementById('alert').textContent = text;
+  document.getElementById('alert').innerHTML = text;
 } 
   });
 

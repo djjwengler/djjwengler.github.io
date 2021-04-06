@@ -20,6 +20,9 @@
 #alert {
   font-size: 1.3em;
 }
+#alert a {
+  color: white;
+}
 .closebtn {
   margin-left: 15px;
   color: var(--secondary1);
@@ -31,9 +34,6 @@
   transition: 0.3s;
 }
 
-.closebtn:hover {
-  color: black;
-}
 body {
   background-color: var(--secondary1);
   font-family: var(--p-font);
@@ -198,10 +198,7 @@ nav button {
   padding: 20px;
   font-size: 1.2rem;
 }
-#join-btn a {
-  color: white;
-  text-decoration: none;
-}
+
 #join-btn:hover {
   background-color: var(--accent1);
   color: var(--secondary1);
@@ -388,10 +385,6 @@ textarea {
   max-width: 20rem;
   background-color: white;
 }
-form label.top select {
-  width: 100%;
-  max-width: 21.5rem;
-}
 
 form label.sbs {
   display: block;
@@ -419,10 +412,12 @@ form input.submitBtn:hover {
 
 form label.top input:required {
   border-left: var(--accent2) solid 6px;
+  width: 87%;
 }
 form label.top input:required:valid {
   border-left: var(--secondary2) solid 6px;
 }
+
 #member-perks {
   color: white;
 }
