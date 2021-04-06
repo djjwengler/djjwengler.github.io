@@ -5,15 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Yardley Pennsylvania Chamber of Commerce contact information page with contact form"
+      content="Yardley Pennsylvania Chamber of Commerce Contact Page"
+    />
+    <link rel="preload" as="image" href="images/heroflip-425-min.jpg" />
+    <link rel="preload" as="style" href="css/small.css" />
+    <link
+      rel="preconnect"
+      href="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+    />
+    <link
+      rel="preconnect"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link href="css/small.css" rel="stylesheet" />
-    <link href="css/medium.css" rel="stylesheet" />
-    <link href="css/large.css" rel="stylesheet" />
+    <link
+      href="css/medium.css"
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      href="css/large.css"
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Oswald", "Cardo"],
+        },
+      });
+    </script>
     <title>Yardley Chamber of Commerce Contact Page</title>
   </head>
   <body>
@@ -52,6 +80,7 @@
               src="images/twitter1.png"
               alt="twitter link"
               class="social-logo"
+              loading="lazy"
             />
           </a>
         </span>
@@ -61,6 +90,7 @@
               src="images/facebook1.png"
               alt="facebook link"
               class="social-logo"
+              loading="lazy"
             /> </a
         ></span>
       </div>
@@ -147,6 +177,7 @@
               src="images/twitter1.png"
               alt="twitter link"
               class="social-logo"
+              loading="lazy"
             />
           </a>
         </span>
@@ -156,6 +187,7 @@
               src="images/facebook1.png"
               alt="facebook link"
               class="social-logo"
+              loading="lazy"
             /> </a
         ></span>
       </div>
@@ -171,13 +203,5 @@
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/toggle.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-      WebFont.load({
-        google: {
-          families: ["Oswald", "Cardo"],
-        },
-      });
-    </script>
   </body>
 </html>

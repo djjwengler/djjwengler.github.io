@@ -21,6 +21,9 @@
   font-size: 1.3em;
 }
 #alert a {
+  color: var(--secondary1);
+}
+#alert a:hover {
   color: white;
 }
 .closebtn {
